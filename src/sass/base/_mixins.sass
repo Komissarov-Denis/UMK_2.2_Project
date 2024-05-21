@@ -1,0 +1,91 @@
+@mixin divider_black
+	display: block
+	width: 115px
+	height: 27px
+	margin: 0 auto 0 auto
+	background: $black_color
+	font-weight: 400
+	font-size: 11px
+	line-height: 30px
+	text-align: center
+	text-transform: uppercase
+	color: $white_color
+
+@mixin divider_white  
+	display: block
+	width: 115px
+	height: 27px
+	margin: 0 auto 0 auto
+	background: $white_color
+	font-weight: 400
+	font-size: 11px
+	line-height: 30px
+	text-align: center
+	text-transform: uppercase
+	color: rgb(7, 7, 22)
+
+@mixin header_black    
+	text-align: center
+	margin-top: 45px
+	margin-bottom: 0
+	font-weight: 700
+	font-size: 36px
+	text-transform: uppercase
+	color: $semi_black_color
+
+@mixin header_white
+	text-align: center
+	margin-top: 45px
+	margin-bottom: 0
+	font-weight: 700
+	font-size: 36px
+	text-transform: uppercase
+	color: $white_color
+
+@mixin header_description_black
+	margin-top: 10px
+	margin-bottom: 0
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	color: $semi_black_color
+
+@mixin header_description_white  
+	margin-top: 10px
+	margin-bottom: 0
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	color: $white_color
+	
+@mixin application_card_property
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	width: 320px
+	height: 280px
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+
+@mixin application_btn
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 40px
+	height: 40px
+	border-radius: 20px
+	background: $black_color
+	margin: 0 auto 
+	@include btn_hover
+	
+
+=btn_hover
+	&:hover
+		background-image: none
+		background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
+		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		// background-color: $blue_color

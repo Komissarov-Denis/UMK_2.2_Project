@@ -1,0 +1,83 @@
+.promo
+	height: 100vh
+	background-image: url('../img/main/backgr.png') 
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: row
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		max-height: 390px
+		min-width: 1400px
+	&__block-logo 
+		display: flex
+		justify-content: center
+		align-self: center
+		width: 200px
+		height: 200px	
+	&__block
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		max-width: 1000px   
+	&__subheader1
+		font-size: 40px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: $blue_color
+		line-height: 60px
+	&__subheader2
+		font-size: 30px
+		text-align: center
+		text-transform: uppercase
+		color: $blue_color
+		line-height: 36px
+	&__block-btn
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100px
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 200px
+		height: 64px		
+		background-color: $blue_color
+		border-radius: 4px
+		font-weight: 400
+		font-size: 18px
+		color: $white_color
+		+btn_hover
+
+// @media (max-width: 1920px)
+// 	.promo
+// 		min-height: $height_800-500	
+// 		&__block-logo 
+// 			&_img
+// 				img
+// 					width: 100%
+// 		&_block_button		
+// 			&_btn
+// 				width: $width_172-140
+// 				font-size: $font-size_14-12
+// 		&__block
+// 			min-height: $height_716-416	
+// 			&_subheader1
+// 				font-size: $font-size_60-32
+// 				line-height: $line-height_60-40
+// 			&_subheader2
+// 				font-size: $font-size_36-20
+// 				line-height: $line-height_36-24
+// 			&_subheader_description
+// 				font-size: $font-size_18-13
+// 			&_btn
+// 				height: $height_240-120
+// 				&_button
+// 					width: $width_260-190
+// 					height: $height_64-50
+// 					font-size: $font-size_18-13	
