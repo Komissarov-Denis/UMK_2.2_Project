@@ -21,9 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	// modal----------------------------------------------------	
 	// console.log();
 
-	const btn = document.querySelector('.btn__open-modal');
+	const btn = document.querySelector('.btn_open-modal');
 	btn.addEventListener('click', function() {
-		console.log('Second click');
 		openModalWindow();
 	});
 	function openModalWindow() {

@@ -54,30 +54,24 @@
 		color: $white_color
 		+btn_hover
 
-// @media (max-width: 1920px)
-// 	.promo
-// 		min-height: $height_800-500	
-// 		&__block-logo 
-// 			&_img
-// 				img
-// 					width: 100%
-// 		&_block_button		
-// 			&_btn
-// 				width: $width_172-140
-// 				font-size: $font-size_14-12
-// 		&__block
-// 			min-height: $height_716-416	
-// 			&_subheader1
-// 				font-size: $font-size_60-32
-// 				line-height: $line-height_60-40
-// 			&_subheader2
-// 				font-size: $font-size_36-20
-// 				line-height: $line-height_36-24
-// 			&_subheader_description
-// 				font-size: $font-size_18-13
-// 			&_btn
-// 				height: $height_240-120
-// 				&_button
-// 					width: $width_260-190
-// 					height: $height_64-50
-// 					font-size: $font-size_18-13	
+@media (max-width: 1919.98px)	
+	.promo
+		.container
+		&__subheader1
+			font-size: $font-size_40-32
+		&__subheader2
+			font-size: $font-size_30-20		
+
+@media (max-width: 1399.98px)
+	.promo
+		.container
+			min-width: 1000px
+		&__block-logo 
+			width: 150px
+			height: 150px	
+		&__block
+			max-width: 900px 
+		&__button
+			width: 160px
+			height: 54px		
+			font-size: $font-size_18-13
