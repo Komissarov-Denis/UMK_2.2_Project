@@ -18,11 +18,22 @@ window.addEventListener('DOMContentLoaded', () => {
 	// 	});
 	// });
 
-	// modal----------------------------------------------------	
-	// console.log();
+	// theory---------------------------------------------------
+	const btnTheory = document.querySelector('.btn_open-theory');
+	btnTheory.addEventListener('click', function() {
+		window.location.href = '../src/html/pages/theory.html';
+		console.log('click');
+	});
 
-	const btn = document.querySelector('.btn_open-modal');
-	btn.addEventListener('click', function() {
+	// practice-------------------------------------------------
+	const btnPractice = document.querySelector('.btn_open-practice');
+	btnPractice.addEventListener('click', function() {
+		window.location.href = '../src/html/pages/practice.html';
+		console.log('click');
+	});
+	// modal----------------------------------------------------
+	const btnModal = document.querySelector('.btn_open-modal');
+	btnModal.addEventListener('click', function() {
 		openModalWindow();
 	});
 	function openModalWindow() {
