@@ -39,6 +39,15 @@ window.addEventListener('DOMContentLoaded', () => {
 		// console.log('click');
 	});
 
+	// main-------------------------------------------------
+	// const btnMain = document.querySelector('.btn_open-main');
+	// btnMain.addEventListener('click', function() {
+	// 	window.location.href = '../src/html/pages/index.html';
+	// 	// console.log('click');
+	// });
+
+
+
 
 	// modal----------------------------------------------------
 	const btnModal = document.querySelector('.btn_open-modal');
