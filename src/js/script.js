@@ -22,15 +22,24 @@ window.addEventListener('DOMContentLoaded', () => {
 	const btnTheory = document.querySelector('.btn_open-theory');
 	btnTheory.addEventListener('click', function() {
 		window.location.href = '../src/html/pages/theory.html';
-		console.log('click');
+		// console.log('click');
 	});
 
 	// practice-------------------------------------------------
 	const btnPractice = document.querySelector('.btn_open-practice');
 	btnPractice.addEventListener('click', function() {
 		window.location.href = '../src/html/pages/practice.html';
-		console.log('click');
+		// console.log('click');
 	});
+
+	// tests-------------------------------------------------
+	const btnTests = document.querySelector('.btn_open-tests');
+	btnTests.addEventListener('click', function() {
+		window.location.href = '../src/html/pages/tests.html';
+		// console.log('click');
+	});
+
+
 	// modal----------------------------------------------------
 	const btnModal = document.querySelector('.btn_open-modal');
 	btnModal.addEventListener('click', function() {
