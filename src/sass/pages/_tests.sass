@@ -1,3 +1,20 @@
 .tests
-    font-size: 55px
-    font-weight: 400
+	height: 100vh
+	background-image: url('../img/section/section_backgr.png')
+	background-position: center center
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: row
+	.container
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 200px
+		height: 64px		
+		background-color: $blue_color
+		border-radius: 4px
+		font-weight: 400
+		font-size: 18px
+		color: $white_color
+		+btn_hover
