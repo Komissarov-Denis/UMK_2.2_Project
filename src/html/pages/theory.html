@@ -73,11 +73,42 @@
 						<li class="menu__item">
 							<a class="menu__link" href="../pages/tests.html"><span>ТЕСТЫ</span></a>
 						</li>						
+						<li class="menu__item btn_open-modal">
+							<a class="menu__link" href="#"><span>СПРАВКА</span></a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="menu__overlay"></div>
-		</aside>
+		</aside>		
+
+									   <!-- ------------------MODAL------------------ -->
+
+		<div class="modal show">
+			<div class="modal__dialog">
+				<div class="modal__content">
+					<form action="#">
+						<div data-close class="modal__close">&times;</div>
+						<div class="modal__title">
+							<p>Программа предназначена для структуризации теоретического материала.</p>
+							<p>Разработчик: Свищева Т.Ю.</p>
+							<p>Руководитель: Аржанова К.А.</p>
+							<p>Заказчик: Администрация ГБПОУ "ВЭК"</p>
+							<p>Год: 2024</p>
+							<p>Версия: 1.1</p>
+							<p>Минимальные требования к данному продукту:</p>
+							<ol>
+								<li>операционная система Windows XP, 7, 8, 10;</li>
+								<li>процессор с частотой не менее 1,2 ГГц;</li>
+								<li>ОЗУ не менее 512 Мб;</li>
+								<li>не менее 150 Мб свободного места на диске HDD/SSD;</li>
+							</ol>
+						</div>
+						<!-- <button class="btn" type="submit">ЗАКРЫТЬ</button> -->
+					</form>
+				</div>
+			</div>
+		</div>
 		
 		<script src="../../js/pages/theory.js"></script>
 		
