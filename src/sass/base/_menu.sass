@@ -55,7 +55,8 @@
 			color: $blue_color
 			font-size: 40px
 			line-height: normal
-			text-shadow: 1px 3px 4px $blue_color
+			-webkit-filter: drop-shadow(1px 5px 1px rgba(34, 34, 34, 0.25))
+			filter: drop-shadow(1px 5px 1px rgb(34, 34, 34, 0.25))
 	&__link 
 		text-decoration: none
 		span 
@@ -80,6 +81,8 @@
 	.menu
 		&__list
 		&__item
+			&:before				
+				font-size: $font-size_40-32
 		&__link
 			span 
 				font-size: $font-size_40-32
