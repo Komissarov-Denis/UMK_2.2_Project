@@ -1,0 +1,82 @@
+.practice
+	height: 100vh
+	background-image: url('../img/section/section_backgr.png')
+	background-position: center center
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: row
+	background-attachment: fixed
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		min-width: 1400px
+	&__section
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		width: 900px
+	&__items		
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+	&__item
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-direction: column
+		min-height: 300px
+		width: 350px
+		font-size: 18px
+		font-weight: 600
+		border: 2px solid $blue_color
+		border-radius: 20px
+		background-color: $semi_blue_color
+	&__icon
+		display: flex
+		height: 80px
+		width: 80px
+	&__descr
+		display: flex
+		align-items: center
+		height: 170px
+		width: 330px
+		border-radius: 20px	
+		background-color: $blue_color
+		color: $semi_blue_color
+		&:hover
+			background-image: none
+			background-color: $semi_blue_color
+			color: $blue_color
+			
+	// &__button
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	// 	width: 200px
+	// 	height: 64px		
+	// 	background-color: $blue_color
+	// 	border-radius: 4px
+	// 	font-weight: 400
+	// 	font-size: 18px
+	// 	color: $white_color
+	// 	+btn_hover
+
+@media (max-width: 1919.98px)
+	.practice
+		.container			
+			min-width: 1400px
+
+@media (max-width: 1399.98px) 
+	.practice
+		.container			
+			min-width: 1000px
+
+@media (max-width: 1199.98px) 
+	.practice
+		.container			
+			min-width: 900px
+			
+// @media (max-width: 991.98px) 		

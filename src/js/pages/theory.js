@@ -11,14 +11,14 @@ window.addEventListener('DOMContentLoaded', () => {
 	const btnConfig = document.querySelector('.btn_open-config');
 	btnConfig.addEventListener('click', function() {
 		window.location.href = '../../html/pages/subtheory/config.html';
-		console.log('click');
+		// console.log('click');
 	});
 
 	// to-repair-------------------------------------------------
 	const btnRepair = document.querySelector('.btn_open-repair');
 	btnRepair.addEventListener('click', function() {
 		window.location.href = '../../html/pages/subtheory/repair.html';
-		console.log('click');
+		// console.log('click');
 	});
 
 	// hamburger--------------------------------------------
