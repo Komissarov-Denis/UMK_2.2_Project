@@ -9,9 +9,48 @@
 	.container
 		display: flex
 		flex-direction: row
-		justify-content: space-between
-		max-height: 390px
+		justify-content: center
 		min-width: 1400px
+	&__section
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		width: 900px
+	&__items		
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+	&__item
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-direction: column
+		min-height: 300px
+		width: 350px
+		font-size: 18px
+		font-weight: 600
+		border: 2px solid $blue_color
+		border-radius: 20px
+		background-color: $semi_blue_color
+	&__icon
+		display: flex
+		height: 80px
+		width: 80px
+	&__descr
+		display: flex
+		align-items: center
+		height: 170px
+		width: 330px
+		border-radius: 20px	
+		background-color: $blue_color
+		color: $semi_blue_color
+		&:hover
+			background-image: none
+			background-color: $semi_blue_color
+			color: $blue_color
+			
 	// &__button
 	// 	display: flex
 	// 	justify-content: center
