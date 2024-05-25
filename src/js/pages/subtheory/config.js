@@ -8,18 +8,18 @@ window.addEventListener('DOMContentLoaded', () => {
 	// });
 
 	// to-config-------------------------------------------------
-	const btnConfig = document.querySelector('.btn_open-config');
-	btnConfig.addEventListener('click', function() {
-		window.location.href = '../../html/pages/subtheory/config.html';
-		console.log('click');
-	});
+	// const btnConfig = document.querySelector('.btn_open-config');
+	// btnConfig.addEventListener('click', function() {
+	// 	window.location.href = '../../html/pages/subtheory/config.html';
+	// 	console.log('click');
+	// });
 
 	// to-repair-------------------------------------------------
-	const btnRepair = document.querySelector('.btn_open-repair');
-	btnRepair.addEventListener('click', function() {
-		window.location.href = '../../html/pages/subtheory/repair.html';
-		console.log('click');
-	});
+	// const btnRepair = document.querySelector('.btn_open-repair');
+	// btnRepair.addEventListener('click', function() {
+	// 	window.location.href = '../../html/pages/subtheory/repair.html';
+	// 	console.log('click');
+	// });
 
 	// hamburger--------------------------------------------
 	function hamburger() {
@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				item.style.borderStyle = 'solid';
 				item.style.borderColor = 'rgb(19, 54, 118)';
 				item.style.background = 'rgb(217, 220, 236)';
-				console.log(item);				
+				// console.log(item);				
 			});			
 		});		
 		closeElem.addEventListener('click', () => {
