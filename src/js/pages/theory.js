@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				item.style.borderStyle = 'solid';
 				item.style.borderColor = 'rgb(19, 54, 118)';
 				item.style.background = 'rgb(217, 220, 236)';
-				console.log(item);				
+				// console.log(item);				
 			});			
 		});		
 		closeElem.addEventListener('click', () => {
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				item.style.borderStyle = 'none';
 				item.style.borderColor = 'none';
 				item.style.background = 'rgb(19, 54, 118)';
-				console.log(item);				
+				// console.log(item);				
 			});			
 		});
 	}
