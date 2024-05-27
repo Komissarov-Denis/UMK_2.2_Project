@@ -1,25 +1,26 @@
 .practice-config
-	height: 100vh
+	// min-height: 2500px
 	background-image: url('../img/section/section_backgr.png')
 	background-position: center center
-	background-repeat: no-repeat
+	// background-repeat: no-repeat
 	display: flex
-	flex-direction: row
+	flex-direction: row	
 	background-attachment: fixed
 	.container
 		display: flex
 		flex-direction: row
 		justify-content: center
-		min-width: 1400px
+		width: 1400px
+		min-height: 1000px
 	&__section
-		display: flex
+		display: flex		
 		flex-direction: column
-		justify-content: center
+		justify-content: flex-start
 		align-items: center
 		min-height: 300px
-		width: 900px
+		width: 100%
 		h1
-			// margin-bottom: 85px
+			margin-top: 50px
 			font-size: 40px
 			font-weight: 800
 			color: $blue_color
@@ -30,14 +31,17 @@
 			color: $blue_color
 	&__items		
 		display: flex
+		flex-direction: row
 		justify-content: space-between
 		align-items: center
+		flex-wrap: wrap
 		width: 100%
 	&__item
 		display: flex
 		justify-content: space-around
 		align-items: center
 		flex-direction: column
+		margin-bottom: 60px
 		min-height: 300px
 		width: 350px
 		font-size: 18px
@@ -76,17 +80,17 @@
 	// 	+btn_hover
 
 @media (max-width: 1919.98px)
-	.practice
+	.theory
 		.container			
 			min-width: 1400px
 
 @media (max-width: 1399.98px) 
-	.practice
+	.theory
 		.container			
 			min-width: 1000px
 
 @media (max-width: 1199.98px) 
-	.practice
+	.theory
 		.container			
 			min-width: 900px
 			
