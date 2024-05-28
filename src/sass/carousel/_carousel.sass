@@ -7,45 +7,47 @@
 		display: flex
 		justify-content: center
 		height: 100%
-	.offer__slider 
+	&__slider 
 		width: 100%
 		height: 100%
 		display: flex
 		flex-direction: column
 		align-items: flex-end
-		.offer__slider-counter 
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 100%
-			font-size: 24px
-			color: rgba(0,0,0, .5)			
-			.offer__slider-prev 
-				margin-right: 10px
-				cursor: pointer			
-			.offer__slider-next 
-				margin-left: 10px
-				cursor: pointer			
-			#current, #total 
-				font-size: 48px
-				font-weight: bold
-				color: rgba(0,0,0,1)        
-		.offer__slider-wrapper
-			background-color: $white_color 
-			width: 100%
-			height: 100%
-			border-radius: 14px 
-			margin-top: 10px
-			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
-			.offer__slide 
-				width: 100%
-				height: 600px
-				.img 
-					width: 30%
-					height: 10%
-					// object-fit: cover
-
-			
+	&__slider-counter 
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		font-size: 24px
+		color: rgba(0,0,0, .5)			
+	&__slider-prev 
+		margin-right: 10px
+		cursor: pointer			
+	&__slider-next 
+		margin-left: 10px
+		cursor: pointer			
+	#current
+		font-size: 48px
+		font-weight: bold
+		color: rgba(0,0,0,1)
+	#total
+		font-size: 30px
+		font-weight: bold
+		color: rgba(0,0,0,1)
+	&__slider-wrapper
+		background-color: $white_color 
+		width: 100%
+		height: 100%
+		border-radius: 14px 
+		margin-top: 10px
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
+	&__slide 
+		width: 100%
+		height: 600px
+		.img 
+			width: 30%
+			height: 10%
+			// object-fit: cover
 	&__button
 		display: flex
 		justify-content: center
@@ -57,6 +59,7 @@
 		font-weight: 400
 		font-size: 18px
 		color: $white_color
+		margin: 0 80px 0 80px 
 		+btn_hover					
 
 .slide 
