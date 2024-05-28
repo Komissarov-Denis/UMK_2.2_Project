@@ -30,28 +30,28 @@ window.addEventListener('DOMContentLoaded', () => {
 	// }
 	// hamburger();
 
-	// theory---------------------------------------------------
+	// to-theory---------------------------------------------------
 	const btnTheory = document.querySelector('.btn_open-theory');
 	btnTheory.addEventListener('click', function() {
 		window.location.href = '../src/html/pages/theory.html';
 		// console.log('click');
 	});
 
-	// practice-------------------------------------------------
+	// to-practice-------------------------------------------------
 	const btnPractice = document.querySelector('.btn_open-practice');
 	btnPractice.addEventListener('click', function() {
 		window.location.href = '../src/html/pages/practice.html';
 		// console.log('click');
 	});
 
-	// tests-------------------------------------------------
+	// to-tests-------------------------------------------------
 	const btnTests = document.querySelector('.btn_open-tests');
 	btnTests.addEventListener('click', function() {
 		window.location.href = '../src/html/pages/tests.html';
 		// console.log('click');
 	});
 
-	// main-------------------------------------------------
+	// to-main-------------------------------------------------
 	// const btnMain = document.querySelector('.btn_open-main');
 	// btnMain.addEventListener('click', function() {
 	// 	window.location.href = '../src/html/pages/index.html';

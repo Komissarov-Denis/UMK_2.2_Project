@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	// main-------------------------------------------------
+	// to-main-------------------------------------------------
 	// const btnMain = document.querySelector('.btn_open-main');
 	// btnMain.addEventListener('click', function() {
 	// 	window.location.href = '../../index.html';

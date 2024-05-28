@@ -1,20 +1,20 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	// main-------------------------------------------------
+	// to-main-------------------------------------------------
 	// const btnMain = document.querySelector('.btn_open-main');
 	// btnMain.addEventListener('click', function() {
 	// 	window.location.href = '../../index.html';
 	// 	console.log('click');
 	// });
 
-	// // to-config-------------------------------------------------
+	// to-config-------------------------------------------------
 	const btnConfig = document.querySelector('.btn_open-config');
 	btnConfig.addEventListener('click', function() {
 		window.location.href = '../../html/pages/subpractice/config.html';
 		// console.log('click');
 	});
 
-	// // to-repair-------------------------------------------------
+	// to-repair-------------------------------------------------
 	const btnRepair = document.querySelector('.btn_open-repair');
 	btnRepair.addEventListener('click', function() {
 		window.location.href = '../../html/pages/subpractice/repair.html';
