@@ -1,25 +1,42 @@
 window.addEventListener('DOMContentLoaded', () => {
+	
+	// to-carousel10------------------------------------------------
+	const btnRepair10 = document.querySelector('.btn_open-carousel10');
+	btnRepair10.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel10.html';
+		// console.log('click');
+	});
+	// to-carousel11------------------------------------------------
+	const btnRepair11 = document.querySelector('.btn_open-carousel11');
+	btnRepair11.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel11.html';
+		// console.log('click');
+	});
+	// to-carousel12------------------------------------------------
+	const btnRepair12 = document.querySelector('.btn_open-carousel12');
+	btnRepair12.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel12.html';
+		// console.log('click');
+	});
+	// to-carousel13------------------------------------------------
+	const btnRepair13 = document.querySelector('.btn_open-carousel13');
+	btnRepair13.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel13.html';
+		// console.log('click');
+	});
+	// to-carousel14------------------------------------------------
+	const btnRepair14 = document.querySelector('.btn_open-carousel14');
+	btnRepair14.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel14.html';
+		// console.log('click');
+	});
+	// to-carousel15------------------------------------------------
+	const btnRepair15 = document.querySelector('.btn_open-carousel15');
+	btnRepair15.addEventListener('click', function() {
+		window.location.href = '../../carousel/practice-pages/carousel15.html';
+		// console.log('click');
+	});
 
-	// to-main-------------------------------------------------
-	// const btnMain = document.querySelector('.btn_open-main');
-	// btnMain.addEventListener('click', function() {
-	// 	window.location.href = '../../index.html';
-	// 	console.log('click');
-	// });
-
-	// to-config-------------------------------------------------
-	// const btnConfig = document.querySelector('.btn_open-config');
-	// btnConfig.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/config.html';
-	// 	console.log('click');
-	// });
-
-	// to-repair-------------------------------------------------
-	// const btnRepair = document.querySelector('.btn_open-repair');
-	// btnRepair.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/repair.html';
-	// 	console.log('click');
-	// });
 
 	// hamburger--------------------------------------------
 	function hamburger() {

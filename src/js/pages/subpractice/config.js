@@ -1,78 +1,56 @@
 window.addEventListener('DOMContentLoaded', () => {
-
-	// to-main-------------------------------------------------
-	// const btnMain = document.querySelector('.btn_open-main');
-	// btnMain.addEventListener('click', function() {
-	// 	window.location.href = '../../index.html';
-	// 	console.log('click');
-	// });
-
-	// to-config-------------------------------------------------
-	// const btnConfig = document.querySelector('.btn_open-config');
-	// btnConfig.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/config.html';
-	// 	console.log('click');
-	// });
-
-	// to-repair-------------------------------------------------
-	// const btnRepair = document.querySelector('.btn_open-repair');
-	// btnRepair.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/repair.html';
-	// 	console.log('click');
-	// });
-
 	
 	// to-carousel1-------------------------------------------------
-	const btnPractice1 = document.querySelector('.btn_open-carousel1');
-	btnPractice1.addEventListener('click', function() {
+	const btnConfig1 = document.querySelector('.btn_open-carousel1');
+	btnConfig1.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel1.html';
 		// console.log('click');
 	});
 	// to-carousel2-------------------------------------------------
-	const btnPractice2 = document.querySelector('.btn_open-carousel2');
-	btnPractice2.addEventListener('click', function() {
+	const btnConfig2 = document.querySelector('.btn_open-carousel2');
+	btnConfig2.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel2.html';
 		// console.log('click');
 	});
 	// to-carousel3-------------------------------------------------
-	const btnPractice3 = document.querySelector('.btn_open-carousel3');
-	btnPractice3.addEventListener('click', function() {
+	const btnConfig3 = document.querySelector('.btn_open-carousel3');
+	btnConfig3.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel3.html';
 		// console.log('click');
 	});
 	// to-carousel4-------------------------------------------------
-	const btnPractice4 = document.querySelector('.btn_open-carousel4');
-	btnPractice4.addEventListener('click', function() {
+	const btnConfig4 = document.querySelector('.btn_open-carousel4');
+	btnConfig4.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel4.html';
 		// console.log('click');
 	});
 	// to-carousel5-------------------------------------------------
-	const btnPractice5 = document.querySelector('.btn_open-carousel5');
-	btnPractice5.addEventListener('click', function() {
+	const btnConfig5 = document.querySelector('.btn_open-carousel5');
+	btnConfig5.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel5.html';
 		// console.log('click');
 	});
 	// to-carousel6-------------------------------------------------
-	const btnPractice6 = document.querySelector('.btn_open-carousel6');
-	btnPractice6.addEventListener('click', function() {
+	const btnConfig6 = document.querySelector('.btn_open-carousel6');
+	btnConfig6.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel6.html';
 		// console.log('click');
 	});
 	// to-carousel7-------------------------------------------------
-	const btnPractice7 = document.querySelector('.btn_open-carousel7');
-	btnPractice7.addEventListener('click', function() {
+	const btnConfig7 = document.querySelector('.btn_open-carousel7');
+	btnConfig7.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel7.html';
 		// console.log('click');
 	});
 	// to-carousel8-------------------------------------------------
-	const btnPractice8 = document.querySelector('.btn_open-carousel8');
-	btnPractice8.addEventListener('click', function() {
+	const btnConfig8 = document.querySelector('.btn_open-carousel8');
+	btnConfig8.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel8.html';
 		// console.log('click');
 	});
 	// to-carousel9-------------------------------------------------
-	const btnPractice9 = document.querySelector('.btn_open-carousel9');
-	btnPractice9.addEventListener('click', function() {
+	const btnConfig9 = document.querySelector('.btn_open-carousel9');
+	btnConfig9.addEventListener('click', function() {
 		window.location.href = '../../carousel/practice-pages/carousel9.html';
 		// console.log('click');
 	});
