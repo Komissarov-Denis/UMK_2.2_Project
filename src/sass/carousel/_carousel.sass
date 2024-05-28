@@ -1,7 +1,8 @@
 .offer
 	height: 100vh
-	/* padding: 70px 0 100px 0; */
-	/* position: relative; */
+	background-image: url('../img/section/section_backgr.png')
+	background-position: center center
+	background-repeat: no-repeat
 	.container-fluid 
 		display: flex
 		justify-content: center
@@ -29,7 +30,8 @@
 				font-size: 48px
 				font-weight: bold
 				color: rgba(0,0,0,1)        
-		.offer__slider-wrapper 
+		.offer__slider-wrapper
+			background-color: $white_color 
 			width: 100%
 			height: 100%
 			border-radius: 14px 
@@ -39,9 +41,23 @@
 				width: 100%
 				height: 600px
 				.img 
-					width: 100%
-					height: 100%
-					object-fit: cover
+					width: 30%
+					height: 10%
+					// object-fit: cover
+
+			
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 200px
+		height: 64px		
+		background-color: $blue_color
+		border-radius: 4px
+		font-weight: 400
+		font-size: 18px
+		color: $white_color
+		+btn_hover					
 
 .slide 
 	display: block
