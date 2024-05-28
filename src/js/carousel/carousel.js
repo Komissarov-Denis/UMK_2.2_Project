@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const btnMain = document.querySelector('.btn_open-subtheory');
 	btnMain.addEventListener('click', function() {
 		window.location.href = '../../pages/subtheory/config.html';
-		console.log('click');
+		// console.log('click');
 	});
 
 	// CAROUSEL------------------------------------
