@@ -1,12 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 	// to-section-subtheory-----------------------
-	const btnSubTheoryCfg = document.querySelector('.btn_open-subtheory-config');
-	console.log(btnSubTheoryCfg);
-	btnSubTheoryCfg.addEventListener('click', function() {
-		window.location.href = '../../pages/subtheory/config.html';
-		// console.log('click');
-	});
+	// const btnSubTheoryCfg = document.querySelector('.btn_open-subtheory-config');
+	// console.log(btnSubTheoryCfg);
+	// btnSubTheoryCfg.addEventListener('click', function() {
+	// 	window.location.href = '../../pages/subtheory/config.html';
+	// 	// console.log('click');
+	// });
 	// // to-section-subtheory-----------------------
 	// const btnSubTheoryRpr = document.querySelector('.btn_open-subtheory-repair');
 	// console.log(btnSubTheoryRpr);
@@ -16,11 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
 	// });
 
 	// to-section-subpractice-----------------------
-	// const btnSubPracriceCfg = document.querySelector('.btn_open-subpractice-config');
-	// btnSubPracriceCfg.addEventListener('click', function() {
-	// 	window.location.href = '../../pages/subpractice/config.html';
-	// 	// console.log('click');
-	// });
+	const btnSubPracriceCfg = document.querySelector('.btn_open-subpractice-config');
+	btnSubPracriceCfg.addEventListener('click', function() {
+		window.location.href = '../../pages/subpractice/config.html';
+		// console.log('click');
+	});
 	// to-section-subpractice-----------------------
 	// const btnSubPracriceRpr = document.querySelector('.btn_open-subpractice-repair');
 	// btnSubPracriceRpr.addEventListener('click', function() {
