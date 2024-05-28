@@ -1,25 +1,54 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	// to-main-------------------------------------------------
-	// const btnMain = document.querySelector('.btn_open-main');
-	// btnMain.addEventListener('click', function() {
-	// 	window.location.href = '../../index.html';
-	// 	console.log('click');
-	// });
-
-	// to-config-------------------------------------------------
-	// const btnConfig = document.querySelector('.btn_open-config');
-	// btnConfig.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/config.html';
-	// 	console.log('click');
-	// });
-
-	// to-repair-------------------------------------------------
-	// const btnRepair = document.querySelector('.btn_open-repair');
-	// btnRepair.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/repair.html';
-	// 	console.log('click');
-	// });
+	// to-carousel16------------------------------------------------
+	const btnRepair16 = document.querySelector('.btn_open-carousel16');
+	btnRepair16.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel16.html';
+		// console.log('click');
+	});
+	// to-carousel17------------------------------------------------
+	const btnRepair17 = document.querySelector('.btn_open-carousel17');
+	btnRepair17.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel17.html';
+		// console.log('click');
+	});
+	// to-carousel18------------------------------------------------
+	const btnRepair18 = document.querySelector('.btn_open-carousel18');
+	btnRepair18.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel18.html';
+		// console.log('click');
+	});
+	// to-carousel19------------------------------------------------
+	const btnRepair19 = document.querySelector('.btn_open-carousel19');
+	btnRepair19.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel19.html';
+		// console.log('click');
+	});
+	// to-carousel20------------------------------------------------
+	const btnRepair20 = document.querySelector('.btn_open-carousel20');
+	btnRepair20.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel20.html';
+		// console.log('click');
+	});
+	// to-carousel21------------------------------------------------
+	const btnRepair21 = document.querySelector('.btn_open-carousel21');
+	btnRepair21.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel21.html';
+		// console.log('click');
+	});
+	// to-carousel22------------------------------------------------
+	const btnRepair22 = document.querySelector('.btn_open-carousel22');
+	btnRepair22.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel22.html';
+		// console.log('click');
+	});
+	// to-carousel23------------------------------------------------
+	const btnRepair23 = document.querySelector('.btn_open-carousel23');
+	btnRepair23.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel23.html';
+		// console.log('click');
+	});
+	
 
 	// hamburger--------------------------------------------
 	function hamburger() {

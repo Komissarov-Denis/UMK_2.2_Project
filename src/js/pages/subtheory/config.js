@@ -1,32 +1,13 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	// to-main-------------------------------------------------
-	// const btnMain = document.querySelector('.btn_open-main');
-	// btnMain.addEventListener('click', function() {
-	// 	window.location.href = '../../index.html';
-	// 	console.log('click');
-	// });
-
-	// to-config-------------------------------------------------
-	// const btnConfig = document.querySelector('.btn_open-config');
-	// btnConfig.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/config.html';
-	// 	console.log('click');
-	// });
-
-	// to-repair-------------------------------------------------
-	// const btnRepair = document.querySelector('.btn_open-repair');
-	// btnRepair.addEventListener('click', function() {
-	// 	window.location.href = '../../html/pages/subtheory/repair.html';
-	// 	console.log('click');
-	// });
-
 	// to-carousel1-------------------------------------------------
-	const btnRepair = document.querySelector('.btn_open-carousel1');
-	btnRepair.addEventListener('click', function() {
+	const btnConfig = document.querySelector('.btn_open-carousel1');
+	btnConfig.addEventListener('click', function() {
 		window.location.href = '../../carousel/theory-pages/carousel1.html';
-		console.log('click');
+		// console.log('click');
 	});
+
+	
 
 	// hamburger--------------------------------------------
 	function hamburger() {
