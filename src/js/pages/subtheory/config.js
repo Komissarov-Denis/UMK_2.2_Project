@@ -21,6 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
 	// 	console.log('click');
 	// });
 
+	// to-carousel1-------------------------------------------------
+	const btnRepair = document.querySelector('.btn_open-carousel1');
+	btnRepair.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel1.html';
+		console.log('click');
+	});
+
 	// hamburger--------------------------------------------
 	function hamburger() {
 		const hamburger = document.querySelector('.hamburger'),
