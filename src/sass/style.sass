@@ -1,14 +1,52 @@
 *
-	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+	// @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+	@font-face 
+		font-family: 'Bebas Neue', sans-serif
+		src: url('BebasNeueBold.eot')
+		src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype')
+		src: url('BebasNeueBold.woff2') format('woff2')
+		src: url('BebasNeueBold.woff') format('woff')
+		src: url('BebasNeueBold.ttf') format('truetype')
+		font-weight: bold
+		font-style: normal
+		font-display: swap
+	@font-face 
+		font-family: 'Bebas Neue', sans-serif
+		src: url('BebasNeueLight.eot')
+		src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype')
+		src: url('BebasNeueLight.woff2') format('woff2')
+		src: url('BebasNeueLight.woff') format('woff')
+		src: url('BebasNeueLight.ttf') format('truetype')
+		font-weight: 300
+		font-style: normal
+		font-display: swap
+	@font-face 
+		font-family: 'Bebas Neue', sans-serif
+		src: url('BebasNeueRegular.eot')
+		src: url('BebasNeueRegular.eot?#iefix') format('embedded-opentype')
+		src: url('BebasNeueRegular.woff2') format('woff2')
+		src: url('BebasNeueRegular.woff') format('woff')
+		src: url('BebasNeueRegular.ttf') format('truetype')
+		font-weight: normal
+		font-style: normal
+		font-display: swap
 	font-family: "Bebas Neue", sans-serif
+
+	@font-face 
+		font-family: 'Times New Roman', serif
+		src: url('TimesNewRomanPSMT.eot')
+		src: url('TimesNewRomanPSMT.eot?#iefix') format('embedded-opentype')
+		src: url('TimesNewRomanPSMT.woff2') format('woff2')
+		src: url('TimesNewRomanPSMT.woff') format('woff')
+		src: url('TimesNewRomanPSMT.ttf') format('truetype')
+		font-weight: normal
+		font-style: normal
+		font-display: swap
 
 @import 'base/variables'
 @import 'base/mixins'
 @import 'base/hamburger'
 @import 'base/menu'
-// @import 'general'
-
-
 @import 'sections/promo'	
 @import 'sections/modal'
 @import 'pages/theory'
@@ -20,11 +58,9 @@
 @import 'pages/subpractice/repair'
 @import 'carousel/carousel'
 @import 'carousel/theory-slide'
-// @import 'sections/carousel'
-// @import 'sections/catalog'
-// @import 'sections/comments'
-// @import 'sections/footer'	
 
+// .theory-slide	
+// 	font-family: 'Times New Roman', serif
 .show 
 	display: block
 .hide 
