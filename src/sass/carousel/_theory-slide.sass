@@ -64,14 +64,20 @@
 		display: flex
 		flex-direction: row
 		justify-content: space-around
+		flex-wrap: wrap
 		font-size: 26px
 		font-family: 'Times New Roman', serif
+		&_mod
+			// justify-content: flex-start
 	&__list
 		font-size: 26px	
 		font-family: 'Times New Roman', serif
+		&_mod
+			width: 520px
 	&__list-descr
 		font-size: 26px	
 		font-family: 'Times New Roman', serif
+		margin-bottom: 20px
 	&__item
 		font-size: 26px	
 		font-family: 'Times New Roman', serif
@@ -82,6 +88,7 @@
 		&__wrapper
 		h1
 			font-size: $font-size_40-32
+			font-weight: 600
 		h3
 			font-size: $font-size_26-14
 		h4			
