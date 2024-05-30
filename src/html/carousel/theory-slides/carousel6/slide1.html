@@ -16,11 +16,37 @@
 <body>
 	
 	<div class="theory-slide">
-		<h1>1</h1>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto, in ad nesciunt atque at unde quos suscipit maiores! Vero ipsum laudantium culpa? Illo, vitae blanditiis. Numquam tenetur eum quisquam!
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga magni, possimus rerum corporis, molestias aliquid consequuntur reprehenderit neque est consequatur aliquam repellat, ab dignissimos tenetur! Sapiente vero odio incidunt!
-	</div>	
-	
+		<div class="theory-slide__wrapper">
+
+			<h1>1.6 Программные средства поддержки ПУ. Прямой доступ к памяти. Приостановки. Прерывания. Драйверы. Спецификация Р&Р.</h1>			
+			<div class="theory-slide__list-descr theory-slide__list-descr_mod">
+				<div class="theory-slide__text">
+					<p>Программные средства поддержки периферийных устройств – это программы или драйверы, которые обеспечивают взаимодействие между операционной системой компьютера и подключенными периферийными устройствами.</p>
+				</div>
+			</div>			
+			<div class="theory-slide__list-descr theory-slide__list-descr_mod">
+				<div class="theory-slide__text">
+					<p>Эти программы предоставляют необходимую функциональность для работы периферийных устройств. Например, драйверы позволяют операционной системе распознавать подключенные устройства, передавать данные между ними и обеспечивать соответствующую работу устройств. Прямой доступ к памяти (DirectMemoryAccess, DMA) - это механизм, используемый компьютером для передачи данных между устройствами ввода-вывода (например, жестким диском, сетевой картой, звуковой картой) и оперативной памятью без необходимости процессора участвовать в каждой передаче данных.</p>
+				</div>
+			</div>			
+			<div class="theory-slide__list-descr theory-slide__list-descr_mod">
+				<div class="theory-slide__text">
+					<p>Когда устройство хочет перенести данные в оперативную память или из нее, оно инициирует процедуру DMA, сообщая контроллеру DMA о начале передачи данных. Контроллер DMA управляет этим процессом напрямую, читая и записывая данные между устройством и памятью без вмешательства процессора.</p>
+				</div>
+			</div>			
+			<div class="theory-slide__list-descr theory-slide__list-descr_mod">
+				<div class="theory-slide__text">
+					<p>Приостановки (Suspend): Режим энергосбережения в компьютерах и других устройствах, который временно приостанавливает работу устройства, но сохраняет его состояние. Это позволяет быстро возобновить работу устройства, минимизируя потребление энергии.</p>
+				</div>
+			</div>			
+			<div class="theory-slide__list-descr theory-slide__list-descr_mod">
+				<div class="theory-slide__text">
+					<p>Прерывания (Interrupts) - это важный механизм в компьютерах, который позволяет операционной системе прерывать текущее выполнение программы для обработки важных событий, таких как сигнал от устройства ввода-вывода, исключительная ситуация или изменение состояния процессора. Прерывания позволяют операционной системе реагировать на различные события в реальном времени, что делает работу компьютера более эффективной и отзывчивой. Когда происходит прерывание, процессор сохраняет текущее состояние задачи, выполняет обработчик прерывания, который обычно содержит код для реакции на конкретное событие, а затем возобновляет выполнение прерванной задачи.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>		
 	<!-- <script src="js/script.js"></script> -->
 
 </body>
