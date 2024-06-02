@@ -28,6 +28,50 @@ window.addEventListener('DOMContentLoaded', () => {
 	// 	// console.log('click');
 	// });
 
+
+
+	// modal----------------------------------------------------
+	const btnModal = document.querySelector('.btn_open-video-modal');
+	btnModal.addEventListener('click', function() {
+		openModalWindow();
+	});
+	function openModalWindow() {
+		const modalWindow = document.querySelector('.modal');
+		modalWindow.classList.add('show');		
+		modalWindow.classList.remove('hide');
+		document.body.style.overflow = 'hidden';
+	}
+	function closeModalWindow() {
+		const modalWindow = document.querySelector('.modal');
+		modalWindow.classList.add('hide');
+		modalWindow.classList.remove('show');
+		document.body.style.overflow = '';
+	}
+	closeModalWindow();
+	function modal() {
+		const modalTrigger = document.querySelectorAll('[data-modal]');
+		
+		const modalWindow = document.querySelector('.modal');
+		
+		modalTrigger.forEach(btn => {
+			btn.addEventListener('click', () => openModalWindow('.modal'));
+		});
+		
+		modalWindow.addEventListener('click', (e) => {
+			if (e.target === modalWindow || e.target.getAttribute('data-close') == '') {
+				closeModalWindow('.modal');
+			}
+		});
+		document.addEventListener('keydown', (e) => { 
+			if (e.code === 'Escape' && modalWindow.classList.contains('show')) {
+				closeModalWindow('.modal');
+			}
+		});
+	}	
+	modal();
+
+
+
 	// CAROUSEL-----------------------------------
 	const slides = document.querySelectorAll('.offer__slide'); // получаем все слайды на странице (length: 4)
 	const slider = document.querySelector('.offer__slider'); // получаем весь блок слайдера
