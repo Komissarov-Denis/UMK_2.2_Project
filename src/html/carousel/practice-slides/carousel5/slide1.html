@@ -59,7 +59,7 @@
 				<p>После подключения к сети вашего компьютера начинается загрузка основной ОС, затем подключается винчестер, с которого загружается «Windows» или другая ОС.</p>
 				<p><span>Настройки BIOSA не включаются автоматически на персональном устройстве.</span></p>
 				<p>Для входа в этот режим настроек необходимо после включения компьютера подождать одиночный звуковой сигнал или начало надписи о загрузке, а затем несколько раз нажать кнопку «F2» или «DEL (Delete)» (зависит от «материнки»). Правильный вариант высвечивается внизу экрана.</p>
-				<p>После этого включаются настройки БИОСА на компьютере по умолчанию. Количество и названия основных пунктов меню, расположенных вверху таблицы настроек bios, могут отличаться. Мы рассмотрим основные разделы и подразделы одного из вариантов такого меню, которое состоит из пунктов:</p>
+				<p>После этого включаются настройки BIOSa на компьютере по умолчанию. Количество и названия основных пунктов меню, расположенных вверху таблицы настроек bios, могут отличаться. Мы рассмотрим основные разделы и подразделы одного из вариантов такого меню, которое состоит из пунктов:</p>
 			</div>
 			<div class="practice-page__lists practice-page__lists_mod">
 				<div class="practice-page__list-descr">
@@ -158,678 +158,112 @@
 					</ol>
 				</div>
 			</div>
-
-
-
-
-
-
-			<div class="practice-page__text">
-				<p>Разъёмы Universal Serial Bus (USB) предназначены для подключения к компьютеру таких внешних периферийных устройств, как мышь, клавиатура, портативный жёсткий диск, цифровая камера, VoIP-телефон (Skype) или принтер. Теоретически, к одному host-контроллеру USB можно подключить до 127 устройств. Максимальная скорость передачи составляет 12 Мбит/с для стандарта USB 1.1 и 480 Мбит/с для Hi-Speed USB 2.0. Разъёмы стандартов USB 1.1 и Hi-Speed 2.0 одинаковы. Различия кроются в скорости передачи и наборе функций host-контроллера USB компьютера, да и самих USB-устройств. USB обеспечивает устройства питанием, поэтому они могут работать от интерфейса без дополнительного питания (если USB-интерфейс даёт необходимое питание, не больше 500 мА на 5 В).</p>
-			</div>
+			<h2>Настройка BIOSa - остальные разделы</h2>
 			<div class="practice-page__lists practice-page__lists_mod">
-				<div class="practice-page__list-descr"> Всего существует три типа USB-разъёмов:
-					<ul class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Разъём "тип A": обычно присутствует у ПК.</li>
-						<li class="practice-page__item">Разъём "тип B": обычно находится на самом USB-устройстве (если кабель съёмный)</li>
-						<li class="practice-page__item">Разъём мини-USB: обычно используется цифровыми видеокамерами, внешними жёсткими дисками и т.д.</li>
-					</ul>
+				<div class="practice-page__list-descr">BOOT - управление параметрами непосредственной загрузки. Состоит из:
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Boot Device Priority - выбор приоритетного накопителя (винчестера, дисковода, флешки и прочее) при работе или при установке какой-либо ОС;</li>
+						<li class="practice-page__item">  Hard Disk Drivers - установка приоритетного винчестера, если их несколько;</li>						
+						<li class="practice-page__item">Boot Setting Configuration - выбор конфигурации системы и компьютера при загрузке. При нажатии кнопки «Ввод» (Enter) открывается меню:
+							<ul class="practice-page__item-list">
+								<li>Quick Boot - опция теста памяти (оперативной), изменив которую можно ускорить загрузку ОС;</li>
+								<li>Full Screen Logo - активировав/деактивировав параметр, вы сможете включить или заставку, или информацию о процессе загрузки;</li>
+								<li>Add On ROM Display Mode - определение очереди на экране информации о модулях, подключенных к «материнке» через слоты;</li>
+								<li>Bootup Num-Lock - определение состояния кнопки «Num Lock» при инициализации BIOS;</li>
+								<li>Wait For &prime;F1&prime; If Error - принудительное нажатие кнопки «F1» при возникновении ошибки;</li>
+								<li>Hit &prime;DEL&prime; Message Display - надпись, указывающая клавишу для входа в BIOS.</li>
+							</ul>
+						</li>
+						<li class="practice-page__item">Security Setting:
+							<ul class="practice-page__item-list">
+								<li>SupervisorPassword - настройка пароля доступа в BIOS;</li>
+								<li>User Password - то же самое для обычных индивидов.</li>
+							</ul>
+						</li>
+					</ol>
 				</div>	
 			</div>
 			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
 					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image002.jpg"></img>
-						<p><span>USB "тип A"</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image003.jpg"></img>
-						<p><span>USB "тип B" </span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod4" alt="img" src="../../../../img/practice/config/img2/image004.jpg"></img>
-						<p><span>Разъёмы мини-USB обычно встречаются на цифровых камерах и внешних жёстких дисках.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod3" alt="img" src="../../../../img/practice/config/img2/image005.jpg"></img>
-						<p><span>Логотип USB всегда присутствует на разъёмах.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image006.jpg"></img>
-						<p><span>Кабель-двойник. Каждый USB-порт даёт 5 В/500 мА. Если нужно больше питания (скажем, для мобильного жёсткого диска), то данный кабель позволяет питаться и от второго USB-порта (500 + 500 = 1000 мА).</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image007.jpg"></img>
-						<p><span>Адаптер USB/PS2</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image008.jpg"></img>
-						<p><span>Кабель FireWire с 6-контактной вилкой на одном конце и 4-контактной на другом.</span></p>
+						<img class="practice-page__img practice-page__img_mod12" alt="img" src="../../../../img/practice/config/img5/image003.png"></img>
+						<p><span>Рис.3.</span> Раздел Boot необходим для указания загрузочных устройств и соответствующих им приоритетов загрузки.</p>
 					</div>
 				</div>
 			</div>
 			<div class="practice-page__text">
-				<p>Кабель расширения USB (должен быть не длиннее 5 м)</p>
+				<p>TOOLS - служит для обновления BIOS.</p>
 			</div>
-			<br>
-			<br>
-			<br>
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>Под официальным названием IEEE-1394 скрывается последовательный интерфейс, повсеместно использующийся для цифровых видеокамер, внешних жёстких дисков и различных сетевых устройств. Его также называют FireWire (от Apple) и i.Link (от Sony). На данный момент 400-Мбит/с стандарт IEEE-1394 сменяется 800-Мбит/с IEEE-1394b (также известным как FireWire-800). Обычно устройства FireWire подключаются через 6-контактную вилку, которая обеспечивает питание. У 4-контактной вилки питание не подводится. Устройства FireWire-800, с другой стороны, используют 9-контактные кабели и разъёмы.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">			
-					<div>
-						<img class="practice-page__img practice-page__img_mod7" alt="img" src="../../../../img/practice/config/img2/image009.jpg"></img>
-					</div>
-				</div>
-			</div>
-			
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>Эта карта FireWire обеспечивает два больших 6-контактных порта и один маленький 4-контактный.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">		
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image010.jpg"></img>						
-						<p><span>6-контактный разъём с питанием</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>Названные в честь "старушки" IBM PS/2 эти разъёмы сегодня широко используются в качестве стандартных интерфейсов для клавиатуры и мыши, но они постепенно уступают место USB.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image011.jpg"></img>
-						<p><span>Два порта PS/2: один окрашенный, другой - нет.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image012.jpg"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__lists practice-page__lists_mod">
-				<div class="practice-page__list-descr">Сегодня распространена следующая схема цветового кодирования:
-					<ul class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Фиолетовый: клавиатура;</li>
-						<li class="practice-page__item">Зелёный: мышь;</li>
-					</ul>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>Кроме того, сегодня весьма часто можно встретить гнёзда PS/2 нейтрального цвета, как для мыши, так и для клавиатуры. Перепутать разъёмы для клавиатуры и мыши на материнской плате вполне возможно, но никакого вреда это не принесёт. Если вы так сделаете, то быстро обнаружите ошибку: не будет работать ни клавиатура, ни мышь. Многие ПК даже не загрузятся, если мышь и клавиатура подключены неправильно. Исправить ошибку очень просто: поменяйте местами вилки, и всё заработает!</p>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h2>Интерфейс VGA для монитора</h2>			
-			<div class="practice-page__text">
-				<p>ПК достаточно давно использует 15-контактный интерфейс Mini-D-Sub для подключения монитора (HD15). С помощью правильного переходника можно подключить такой монитор и к выходу DVI-I (DVI-integrated) графической карты. Интерфейс VGA передаёт сигналы красного, зелёного и синего цветов, а также информацию о горизонтальной (H-Sync) и вертикальной (V-Sync) синхронизациях.</p>
-				<p>Новые графические карты обычно оснащаются двумя выходами DVI. Но с помощью переходника DVI-VGA можно легко изменить интерфейс.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod3" alt="img" src="../../../../img/practice/config/img2/image013.jpg"></img>
-						<p><span>Порт VGA на графической карте.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image014.jpg"></img>
-						<p><span>Интерфейс VGA на кабеле монитора.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image015.jpg"></img>
-						<p><span>Переходник DVI-VGA</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image016.jpg"></img>
-						<p><span>Этот адаптер предоставляет информацию для интерфейса VGA</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod8" alt="img" src="../../../../img/practice/config/img2/image017.jpg"></img>
-						<p><span>Интерфейс DVI для монитора</span></p>
-					</div>
-				</div>
-			</div>			
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>DVI является интерфейсом монитора, разработанным, главным образом, для цифровых сигналов. Чтобы не требовалось переводить цифровые сигналы графической карты в аналоговые, а затем выполнять обратное преобразование в дисплее.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">		
-					<div>
-						<img class="practice-page__img practice-page__img_mod7" alt="img" src="../../../../img/practice/config/img2/image018.jpg"></img>						
-						<p><span>Графическая карта с двумя портами DVI</span></p>
-					</div>
-				</div>
-			</div>			
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>Графическая карта с двумя портами DVI может работать одновременно с двумя (цифровыми) мониторами.</p>
-					<p>Поскольку переход с аналоговой на цифровую графику протекает медленно, разработчики графического оборудования позволяют использовать параллельно обе технологии. Кроме того, современные графические карты легко справятся с двумя мониторами.</p>
-					<p>Широко распространённый интерфейс DVI-I позволяет одновременно использовать как цифровое, так и аналоговое подключение.</p>
-					<p>Интерфейс DVI-D встречается весьма редко. Он позволяет только цифровое подключение (без возможности подсоединить аналоговый монитор).</p>
-					<p>В комплект со многими графическими картами входит переходник с интерфейса DVI-I на VGA, который позволяет подключать старые мониторы с 15-контактной вилкой D-Sub-VGA.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">		
-					<div>
-						<img class="practice-page__img practice-page__img_mod8" alt="img" src="../../../../img/practice/config/img2/image019.jpg"></img>						
-						<p><span>Полный список типов DVI (чаще всего используется интерфейс с аналоговым и цифровым подключениями DVI-I).</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<h2>RJ45 для LAN и ISDN</h2>			
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>В сетях чаще всего используются разъёмы для витой пары. На данный момент 100-Мбит/с Ethernet уступает место гигабитному Ethernet (он работает на скоростях до 1 Гбит/с).</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">		
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image020.jpg"></img>						
-						<p><span>Сетевые кабели RJ45 можно найти с различной длиной и расцветкой.</span></p>
-					</div>
-				</div>
-			</div>	
-			<div class="practice-page__list-descr">Но все они используют вилки RJ45. Кабели Ethernet можно разделить на два вида:
-				<ol class="practice-page__list practice-page__list_mod">
-					<li class="practice-page__item">Классический патч-кабель, который используется для подключения компьютера к концентратору или коммутатору;</li>
-					<li class="practice-page__item">Кабель с перекрёстной обжимкой, который используется для соединения между собой двух компьютеров.</li>
-				</ol>
-			</div>			
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod">		
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image021.jpg"></img>						
-						<p><span>Сетевой порт на PCI-карте.</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h2>HDMI</h2>	
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__text">
-					<p>Перед нами цифровой мультимедийный интерфейс для несжатых HDTV-сигналов с разрешением до 1920x1080 (или 1080i), со встроенным механизмом защиты авторских прав Digital Rights Management (DRM). Текущая технология использует вилки типа A с 19 контактами.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">
-					<div>
-						<img class="practice-page__img practice-page__img_mod4" alt="img" src="../../../../img/practice/config/img2/image022.jpg"></img>
-						<p><span>HDMI</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">
-					<div>
-						<img class="practice-page__img practice-page__img_mod8" alt="img" src="../../../../img/practice/config/img2/image023.jpg"></img>
-						<p><span>Переходник HDMI/DVI.</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h2>Внутренние интерфейсы, расположенные в корпусе ПК</h2>
-			<h3>Serial ATA (SATA)</h3>
-			<div class="practice-page__text">
-				<p>SATA является последовательным интерфейсом для подключения накопителей (сегодня это, в основном, жёсткие диски) и призван заменить старый параллельный интерфейс ATA. Стандарт Serial ATA первого поколения сегодня используется очень широко и обеспечивает максимальную скорость передачи данных 150 Мбит/с. Максимальная длина кабеля составляет 1 метр. SATA использует подключение "точка-точка", когда один конец кабеля SATA подсоединяется к материнской плате ПК, а второй - к жёсткому диску. Дополнительные устройства к этому кабелю не подключаются, в отличие от параллельного ATA, когда на каждый кабель можно "вешать" два привода. Так что накопители "master" и "slave" уходят в прошлое.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image024.jpg"></img>
-						<p><span>Четыре порта SATA на материнской плате.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod4" alt="img" src="../../../../img/practice/config/img2/image025.jpg"></img>
-						<p><span>Питание SATA в разных форматах.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image026.jpg"></img>
-						<p><span>Так питаются жёсткие диски SATA.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image027.jpg"></img>
-						<p><span>Питание накопителя SATA через классическую вилку Molex.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image028.jpg"></img>
-						<p><span>Питание накопителя SATA с помощью специального кабеля питания.</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>ATA/133 (Parallel ATA, UltraDMA/133 или E-IDE)</h3>
-			<div class="practice-page__text">
-				<p>Параллельная шина передаёт данные с жёстких дисков и оптических накопителей (CD и DVD) и обратно. Она известна как параллельная ATA (Parallel ATA) и сегодня уступает место последовательной ATA (Serial ATA). Последняя версия использует 40-контактный провод с 80 жилами (половина на "землю"). Каждый такой кабель позволяет подключать, максимум, два накопителя, когда один работает в режиме "master", а второй - в "slave". Обычно режим переключается с помощью небольшой перемычки на накопителе.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image029.jpg"></img>
-						<p><span>ATA</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod8" alt="img" src="../../../../img/practice/config/img2/image030.jpg"></img>
-						<p><span>Ленточный шлейф IDE.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image031.jpg"></img>
-						<p><span>Подключение DVD-привода: красная полоска на шлейфе должна всегда находиться рядом с разъёмом питания.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image032.jpg"></img>
-						<p><span>Интерфейс ATA/133 для классического 3,5" жёсткого диска (внизу) или 2,5" версии (вверху).</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>AGP-слот</h3>
-			<div class="practice-page__text">
-				<p>Большинство графических карт в пользовательских ПК используют интерфейс Accelerated Graphics Port (AGB). У самых старых систем для той же цели применяется интерфейс PCI. Впрочем, на замену обоим интерфейсам призван PCI Express (PCIe). Несмотря на название, PCI Express является последовательной шиной, а PCI (без суффикса Express) - параллельной. В общем, шины PCI и PCI Express не имеют ничего общего, помимо названия.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod9" alt="img" src="../../../../img/practice/config/img2/image033.jpg"></img>
-						<p><span>AGP-слот с защёлкой для графической карты.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image034.jpg"></img>
-						<p><span>Графическая карта AGP</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod9" alt="img" src="../../../../img/practice/config/img2/image035.jpg"></img>
-						<p><span>Графическая карта PCI Express </span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>Материнские платы для рабочих станций используют слот AGP Pro, который обеспечивает дополнительное питание для прожорливых карт OpenGL. Впрочем, в него можно устанавливать и обычные графические карты. Однако AGP Pro так и не получил широкое признание. Обычно прожорливые графические карты комплектуются дополнительным гнездом питания - для той же вилки Molex, к примеру.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image036.jpg"></img>
-						<p><span>Дополнительное питание для графической карты: 4-контактное гнездо.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image037.jpg"></img>
-						<p><span>Дополнительное питание для графической карты: 6-контактное гнездо.</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>									 
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>Стандарт AGP пережил несколько обновлений.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">			
-					<div>
-						<img class="practice-page__img practice-page__img_mod7" alt="img" src="../../../../img/practice/config/img2/image038.png"></img>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>Если вы любите копаться в "железе", то следует помнить о двух уровнях напряжения интерфейса. Стандарты AGP 1X и 2X работают на 3,3 В, в то время как AGP 4X и 8X требуют всего 1,5 В. Кроме того, существуют карты типа Universal AGP, которые подходят для разъёма любого типа. Чтобы предотвратить ошибочную установку карт, слоты AGP используют специальные выступы. А карты - прорези.</p>
-					<p>У верхней карты есть прорезь для AGP 3,3 В. В середине: универсальная карта с двумя вырезами (один для AGP 3,3 В, второй - для AGP 1,5 В). Снизу показана карта с вырезом справа для AGP 1,5 В.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">			
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image039.jpg"></img>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>PCI Express: последовательная шина</h3>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod1" alt="img" src="../../../../img/practice/config/img2/image040.jpg"></img>
-						<p><span>Слоты расширения материнской платы: PCI Express x16 линий (сверху) и 2 PCI Express x1 линия (снизу).</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod4" alt="img" src="../../../../img/practice/config/img2/image041.jpg"></img>
-						<p><span>Два слота PCI Express для установки двух графических карт nVidia SLi. Между ними можно заметить маленький слот PCI Express x1.</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>PCI Express является последовательным интерфейсом, и его не следует путать с шинами PCI-X или PCI, которые используют параллельную передачу сигналов.</p>
-					<p>PCI Express (PCIe) является самым современным интерфейсом для графических карт. В то же время, он подходит и для установки других карт расширения, хотя на рынке пока их очень мало. PCIe x16 обеспечивает в два раза большую пропускную способность, чем AGP 8x. Но на практике это преимущество так себя и не проявило.</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">			
-					<div>
-						<p><span>Графическая карта AGP (сверху) в сравнении с графической картой PCI Express (снизу).</span></p>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image042.jpg"></img>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Разъёмы питания и стандарты ATX</h3>
-			<div class="practice-page__list-descr practice-page__list-descr_mod">
-				<div class="practice-page__text">
-					<p>В данной таблице и на иллюстрациях приведены различные типы разъёмов питания:</p>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod">			
-					<div>
-						<img class="practice-page__img practice-page__img_mod11" alt="img" src="../../../../img/practice/config/img2/image043.png"></img>
-					</div>
+			<div class="practice-page__list-descr practice-page__list-descr_mod">	
+				<div class="practice-page__list-descr">EXIT - выход из BIOS. Имеет 4 режима:
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Exit & Save Changes (F10) - выход с сохранением данных, установленных непосредственно пользователем;</li>
+						<li class="practice-page__item">Exit & Discard Changes - выход без сохранения данных (заводская установка);</li>
+						<li class="practice-page__item">Discard Changes - отмена изменений;</li>
+						<li class="practice-page__item">Load Setup Defaults - установка параметров по умолчанию.</li>
+					</ol>
 				</div>
 			</div>
 			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod1">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
 					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image044.jpg"></img>
-						<p><span>Вилка ATX с 24 контактами (Extented ATX).</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image045.jpg"></img>
-						<p><span>20-контактный кабель ATX.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image046.jpg"></img>
-						<p><span>6-контактный разъём EPS.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod10" alt="img" src="../../../../img/practice/config/img2/image047.jpg"></img>
-						<p><span> разъём питания дисковода.</span></p>
-					</div>
-				</div>	
-				<div class="practice-page__img-block practice-page__img-block_mod1">
-					<div>
-						<img class="practice-page__img practice-page__img_mod8" alt="img" src="../../../../img/practice/config/img2/image048.jpg"></img>
-						<p><span>20/24-контактный разъём (ATX и EATX)</span></p>
+						<img class="practice-page__img practice-page__img_mod12" alt="img" src="../../../../img/practice/config/img5/image004.jpg"></img>
+						<p><span>Рис.4.</span> В меню Exit можно сохранить измененные настройки, а также сбросить BIOS на настройки по-умолчанию.</p>
 					</div>
 				</div>
 			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod2">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image049.jpg"></img>
-						<p><span>Не делайте этого. 4-контактный расширитель с 20 до 24 контактов вилки ATX нельзя использовать для 12-В дополнительного разъёма AUX (впрочем, он находится слишком далеко). 4-контакный расширитель предназначен для порта Extended ATX и не используется на 20-контактных материнских платах ATX.</span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod2">
-					<div>
-						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img2/image050.jpg"></img>
-						<p><span>Вот как нужно: отдельная 4-контактная вилка вставляется в 12-В порт AUX. Её легко распознать: два золотистых и два чёрных кабеля.   </span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Материнская плата</h3>
-			<div class="practice-page__text">
-				<p>Любая современная материнская плата является многослойной и изготавливается из стеклотекстолита. Обычно, для ее изготовления используются специальные слои медной фольги (количество которых может изменяться от 2 до 10), соединенных между собой с помощью изоляционного материала — стекловолокна, пропитанного синтетической смолой. Слои меди не сплошные, а представляют собой токопроводящие дорожки, соединяющие элементы электронной схемы, смонтированной на такой плате. Во внутренних слоях печатной платы обычно располагаются линии электропитания и экранирование от наводок и помех, а на внешних - основные соединения элементов схемы.</p>
-			</div>
-			<div class="practice-page__lists practice-page__lists_mod">
-				<div class="practice-page__list-descr">На материнской плате находятся:
-					<ul class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Наборы больших однокристальных электронных микросхем - чипов (центральный процессор, другие процессоры, интегрированные контроллеры устройств и их интерфейсы);</li>
-						<li class="practice-page__item">Микросхемы оперативной памяти и разъемы их плат;</li>
-						<li class="practice-page__item">Микросхемы электронной логики;</li>
-						<li class="practice-page__item">Простые радиоэлементы (транзисторы, конденсаторы, резисторы и т.д.);</li>
-						<li class="practice-page__item">Системная шина;</li>
-						<li class="practice-page__item">Слоты для подключения плат расширения (видеокарт или видеоадаптеров, звуковых карт, сетевых карт, интерфейсов периферийных устройств);</li>
-						<li class="practice-page__item">Разъемы портов ввода / вывода.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>На материнской плате, как правило, имеются уже встроенные (интегрированные) сетевая и звуковая карты, находятся USB и FireWire разъемы для подключения внешних устройств к системному блоку. Если посмотреть на плату с боковой стороны, то увидим разъемы, которые находятся на обратной стороне системного блока для подключения дополнительных внешних устройств — монитора, клавиатуры и мыши, сетевых, аудио и USB (1.1 / 2.0, 3.0) — устройств и т.п.</p>
-				<p>В зависимости от размера материнской платы, различают следующие форм-факторы материнских плат. Форм-фактор - это физические параметры платы, которые определяют размеры корпуса компьютера и влияют на количество и тип оборудования, которое может быть к ней подключено. Форм-фактор определяет не только размеры материнской платы, но и места ее крепления к корпусу, расположение интерфейсов шин, портов ввода-вывода, процессорного гнезда и слотов для оперативной памяти, а также тип разъема для подключения блока питания.</p>
-			</div>
-			<br>
-			<h4>Таблица 1 - Форм-факторы материнских плат.</h4>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod2" alt="img" src="../../../../img/practice/config/img2/image051.jpg"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod9" alt="img" src="../../../../img/practice/config/img2/image052.jpg"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>Рассмотрим основные компоненты материнской платы, каждую из данных позиций рассмотрим более подробно далее.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod11" alt="img" src="../../../../img/practice/config/img2/image053.jpg"></img>
-						<p><span>Основные фирмы, изготавливающие материнские платы: Asus, GigaByte, Micro-Star International (MSI).</span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Чипсет. Северный и южный мосты.</h3>
-			<div class="practice-page__text">
-				<p>Чипсет (ChipSet — набор микросхем) — основа материнской платы, представляет собой одну или несколько микросхем, специально разработанных для обеспечения взаимодействия центрального процессора (CPU — Central Processing Unit) со всеми другими компонентами компьютера. Чипсет определяет, какой процессор может работать на данной материнской плате, тип, организацию и максимальный объем используемой оперативной памяти (некоторые современные модели процессоров имеют встроенные контроллеры памяти), сколько и какие внешние устройства можно подключить к компьютеру.</p>
-				<p>Разработкой чипсетов для материнских плат занимаются компании: Intel, NVIDIА, AMD, VIА и SIS.</p>
-				<p>Чаще всего чипсет состоит из 2 интегральных микросхем, называемых северным и южным мостами. В процессе эволюции компьютерной схемотехники разработчики пришли к следующей структуре: процессор, затем идет связующее звено или «мост», обеспечивающий работу процессора с оперативной памятью (RAM) и каналом PCIe — «Северный мост », а дальше блок контроллеров интерфейсов дисковых систем, последовательных и параллельных портов, PCI-шины, USB, FireWire -«Южный мост».</p>
-				<p>Характерной особенностью северного моста является высокая (по сравнению с южным мостом) скорость обработки данных и обеспечения выполнения большинства вычислений самим процессором. Поэтому на нем смонтировано дополнительное охлаждение: пассивный радиатор или радиатор с активным охлаждением в виде небольшого вентилятора.</p>
-				<p>Южный мост контролирует работу более медленных устройств, подключение которых происходит с использованием интерфейсов IDE, SATA, USB, LAN, Embeded Audio, PCI, PCIe, обеспечивая возможность передачи из них информации к северному мосту. Южный мост также обеспечивает нормальную работу микросхемы BIOS.</p>
-				<p>Ранее связь северного и южного мостов выполнялся путем интерфейса PCI на смену, которой пришла шина Direct Media Interface (DMI) - последовательная шина, разработанная фирмой Intel для соединения южного моста  с северным. Впервые DMI использована в чипсетах семейства Intel 915 с южным мостом ICH6 в 2004 году. Пропускная способность шины DMI первого поколения составляет 2 ГБ/сек, что значительно выше, чем пропускная способность шины Hub Link (266 МБ/сек) (пришла на смену PCI), которая используется для связи между северным и южным мостами в чипсетах Intel 815/845/848/850/865/875. Вместе с этим, полоса пропускания 2 ГБ/сек (по 1 ГБ/сек в каждом направлении) делится с другими устройствами (например, PCI Express x1, PCI, HD Audio, жесткие диски).</p>
-				<p>В материнских платах для процессоров с разъемом LGA 1155 (то есть для Core i3, Core i5 и некоторых серий Core i7 и Xeon) и со встроенным контроллером памяти, DMI используется для подключения чипсета (PCH) непосредственно к процессору. (Серверные процессоры серии Core i7 для LGA 1366 подсоединяются к чипсета через шину QPI).</p>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Процессоры и их характеристики.</h3>
-			<div class="practice-page__text">
-				<p>Процессор - кристалл сверхчистого кремния, на котором с помощью сложного, многоступенчатого и сверхточного процесса создано несколько миллионов транзисторов и других схемных элементов, соединенных специальными тонкими проводами с внешними выводами. Он руководит системой, выполняя логические и арифметические операции. От мощности процессора зависит быстродействие компьютера. Процессоры для компьютеров изготавливаются фирмами VIA , Cyrix и двумя лидерами Intel и AMD.</p>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Сокеты.</h3>
-			<div class="practice-page__text">
-				<p>Для закрепления процессора на материнской плате существует специальный разъем центрального процессора (форм-фактор) — сокет (Socket) — гнездовой разъем с различным количеством и типом контактов, предназначенный для установки в него центрального процессора.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod11" alt="img" src="../../../../img/practice/config/img2/image054.png"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-			</div>
-			<div class="practice-page__text">
-				<p>В зависимости от модели материнской платы разъемы сокетов могут отличаться, из-за чего не каждый тип процессора к ним подойдет. Старые разъемы для процессоров x86 нумерованных в порядке выпуска, обычно одной цифрой (Socket 1-8). Более поздние разъемы обычно обозначались номерами с соответствующим количеством пинов (ножек) процессора (Socket 370-479). Сокеты различаются по размеру, количеству ножек, их виду, например, у производителя процессоров AMD ножки находятся в самом процессоре, а у того же Intel с сокетом 775, ножек на процессоре нет, а находятся они в самом сокете. Еще стоит заметить, что до определенного сокета подходит  процессоров, как по производителю, так и по модели процессора. Но бывают исключения. Например, в сокет LGA775 подходит, как процессор Intel Core 2 Duo так и Intel Core Quad. В более новых типах процессоров Intel i5, i6, i7 совсем другой сокет LGA1150, который подойдет только к новейшей серии процессоров Haswell и ее преемника Broadwell. Сокет от фирмы AMD не будет совместим с процессорами от Intel и наоборот.</p>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h4>Intel.</h4>
-			<div class="practice-page__lists practice-page__lists_mod">
+			<h2>Этапы перепрошивки BIOS</h2>
+			<div class="practice-page__list-descr practice-page__list-descr_mod">	
 				<div class="practice-page__list-descr">
-					<ul class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Socket B (LGA 1366) - выполнен в 1366 контактной форме, поддерживает процессоры Core i7 серии 9хх, Xeon серии 35хх по 56хх, Celeron P1053. Скоростные характеристики от 1600 МГц до 3500МГц;</li>
-						<li class="practice-page__item">Socket Н (LGA 1156) - выполнен с использованием 1156-и выступающих контактов. Процессоры - Core i7, i5, i3, гибридные процессоры (CPU + GPU). Скоростные характеристики от 2,1ГГц и выше. Ему на смену приходит Socket Н2 (LGA 1155), который поддерживает процессоры Sandy Bridge и Ivy Bridge. Разъем выполнен из 1155 контактов. Выпускается с 2011 года. Скоростные характеристики до 20 ГБ/с;</li>
-						<li class="practice-page__item">Socket R (LGA 2011) - разработан на замену LGA 1366. Разъем выполнен с использованием 2011 контактов. Поддерживает процессор Sandy Bridge серии Е. Скоростные характеристики от 19 ГБ / с до 25.6 ГБ/с;</li>
-						<li class="practice-page__item">Socket H3 (LGA 1150) - разъем для процессоров Intel Haswell, разработанный для замены LGA 1155 (Socket H2). LGA 1150 подходит для процессоров серий Intel Haswell и Broadwell.</li>
-					</ul>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Для данного действия будем использовать USB-накопители (флешки);</li>
+						<li class="practice-page__item">Первый шаг сделан и можно приступать к созданию флешки или загрузочного пространства, которая читается и устанавливается в BIOS. Можно пользоваться целым перечнем существующего программного обеспечения для подобных операций. К примеру, для записи флешки для загрузки можно установить приложение MKBT. Оно обладает простой структурой и работать с ним достаточно просто — одно удовольствие;</li>
+						<li class="practice-page__item">Устанавливаем обновление BIOS с расширением «.exe» на подготовленную флешку и необходимый установочный файл того приложения, с участием которого осуществится прошивка (одним из таких приложений может стать AFUDOS.exe);</li>
+						<li class="practice-page__item">Входим в BIOS, перезагружая систему, выбираем в “First Boot Device” флешку. Здесь не возникает вопросов, потому что точность названия накопителя зависит исключительно от вашей флешки;</li>
+						<li class="practice-page__item">В командной строке вводим AFUDOS (имя файла). ROM и нажимаем “Ввод”. Прошить BIOS очень просто, система сделает все сама и после перезагрузки функционирует уже обновленная система. Теперь стало понятно, как прошить BIOS. Если следовать руководству, его установка не представляет ничего сложного.</li>
+					</ol>
 				</div>
 			</div>
 			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
 					<div>
-						<img class="practice-page__img practice-page__img_mod2" alt="img" src="../../../../img/practice/config/img2/image055.png"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h4>AMD.</h4>
-			<div class="practice-page__lists practice-page__lists_mod">
-				<div class="practice-page__list-descr">
-					<ul class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Socket AM2 + идентичен Socket AM2 отличие заключается лишь в поддержке процессоров на ядрах Agena, Toliman;</li>
-						<li class="practice-page__item">Socket AM3 процессоры — AMD Phenom II X4 910, 810, 805 и AMD Phenom II X3 720 и 710. Socket FM1 — разъем для процессоров Llano;</li>						
-						<li class="practice-page__item">Socket FM2 — для процессоров Komodo, Trinity, Terrama, Sepang.</li>
-					</ul>
-				</div>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod2" alt="img" src="../../../../img/practice/config/img2/image056.png"></img>
-						<p><span></span></p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<h3>Разъемы материнских плат.</h3>
-			<div class="practice-page__text">
-				<p>По всему периметру платы находится большое количество специальных разъемов в виде слотов. Они предназначены для подключения плат расширения.</p>
-				<p>Разъема PCI - долгое время были стандартом для подключения аудио-, звуковых - и сетевых карт, TV-тюнера, Wi-Fi-адаптера. Однако впоследствии появились новые и более быстрые шины PCIе. На сегодняшний день некоторые материнские платы поддерживают оба этих интерфейса, но поддержка PCI встречается все реже.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod12" alt="img" src="../../../../img/practice/config/img2/image057.jpg"></img>
-						<p><span></span></p>
+						<img class="practice-page__img practice-page__img_mod12" alt="img" src="../../../../img/practice/config/img5/image005.jpg"></img>
+						<p><span>Рис.5.</span> При обновлении BIOS с флеш-карты необходимо сначала загрузиться с соответствующего USB-устройства.</p>
 					</div>
 				</div>
 			</div>
 			<div class="practice-page__text">
-				<p>Для жестких дисков и DVD / CD приводов предназначены разъемы SATA и PATA (ATA (IDE)). Их легко отличить по внешнему виду (SATA — маленький, РATA — широкий, много контактный), как на самом устройстве, так и на материнской плате. Несмотря на новый стандарт (SATA), некоторые материнские платы все еще оснащаются старым интерфейсом ATA (IDE). Но вероятно со временем его поддержка прекратится, полностью учитывая неактуальность.</p>
-				<p>Оперативная память используется процессором для кратковременного хранения информации во время выполнения им различных операций. Чем больше программ одновременно открыто и обрабатывается процессором, тем больше оперативной памяти для этого используется.</p>
-				<p>Для оперативной памяти существуют отдельные разъемы. В результате ее развития и усовершенствований существует несколько типов памяти: DDR1, DDR2, DDR3, DDR4. Чем больше цифра-окончание, тем более продуктивной является память.</p>
-				<p>Каждая из них имеет свой разъем для подключения, а соответственно каждая материнская плата рассчитана на поддержку только одного ее типа. То есть каждый тип памяти не являются взаимозаменяемыми. На рисунке приведены различия в расположении зазоров в разъемах различных типов оперативной памяти.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod12" alt="img" src="../../../../img/practice/config/img2/image058.jpg"></img>
-						<p><span>Сравнение различных типов оперативной памяти</span></p>
-					</div>
-				</div>
+				<p><span>Стоит обратить внимание, что должно быть выполнено подключение компьютера к сети во время прошивки BIOS</span>При скачивании обязательно проверьте критерий названия и номера ревизии, который указан внизу слева м/п ( REV 2.0). Номера ревизии может не быть при ревизии 1.0. При загрузке не той модели, которая вам нужна, вы можете получить текстовые сообщения, в частности, такое как «Bios Id Check Error».</p>
 			</div>
 			<div class="practice-page__text">
-				<p>И последний рассмотренный нами разъем используется для подключения блока питания к материнской плате. Этот разъем практически не изменился со времен появления первой ATX материнской платы. К нему лишь добавили несколько контактов для подачи дополнительного питания к современным мощным процессорам.</p>
+				<p>Требуется установить необходимые файлы (образ MS-DOS, программа HP USB Tool, amiflash, awdflash), выбрать подходящее пространство, распаковать, запустить мастер для установления HP USB Tool (hp_usb_tool.exe) и установить, согласно его руководству. Ту же процедуру проделываем с образом MS-DOS. Чтобы прошить BIOS, будем устанавливать флешку и запускать программное обеспечение HP USB Tool.</p>
 			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod5" alt="img" src="../../../../img/practice/config/img2/image059.jpg"></img>
-						<p><span></span></p>
-					</div>
-				</div>
+			<div class="practice-page__text">
+				<p>Чтобы выбрать флешку, устанавливаем флажок на «Выбираем свою флешку», потом устанавливаем флажки на «Quick Format» для быстрого форматирования, «Create DOS system files» для создания диска DOC. Нужно выбрать путь к файловому каталогу MS-DOS, где распакован образ DOC, после чего нажать на старт, и платформа готова.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Следующим шагом, учитывая используемый прошивщик, будет установка в корне носителя прошивщика с именем amiflash.exe или awdflash.exe. Прошивка с именем flash.bin записывается туда же. Таким образом, просто переименовывается название оригинала. Учитывая прошивщик, создается в корне документ в текстовом формате, у которого имя amiflash.bat и awdflash.bat. Его содержанием должно быть amiflash flash.bin /b /d /e /g., или awdflash flash.bin /cc/cd/cp/py/sn/e/f. Имя прошивщика ставится в первом пункте, имя прошивки — во втором. Третий пункт — это параметры запуска.</p>
 			</div>
 			<br>
 			<br>
 			<br>
 			<div class="practice-page__text">
-				<p><span>Задание 1:</span> Запишите в отчет  устройства и интерфейсы, которые находятся в системном блоке и на задней стенке в виде таблицы, проверить знание интерфейсов на тренажере.</p>
-			</div>
-			<div class="practice-page__wrpr practice-page__wrpr_mod">
-				<div class="practice-page__img-block practice-page__img-block_mod3">
-					<div>
-						<img class="practice-page__img practice-page__img_mod13" alt="img" src="../../../../img/practice/config/img2/image060.jpg"></img>
-						<p><span></span></p>
-					</div>
-				</div>
+				<p><span>Задание 1:</span> Записать в отчет основные настройки (с переводом) и краткой характеристикой.</p>
 			</div>
 			<div class="practice-page__text">
-				<p><span>Задание 2:</span> Изучить расположение компонентов материнской платы. Запишите в отчет, из каких компонентов состоит материнская плата.</p>
+				<p><span>Задание 2:</span> Запустите эмулятор BIOS. Измените настройки данные в задании.</p>
 			</div>
 			<div class="practice-page__lists practice-page__lists_mod">
 				<div class="practice-page__list-descr"><span>Контрольные вопросы:</span>
 					<ol class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Какие платы расширения содержит данный системный блок?</li>
-						<li class="practice-page__item">Какие основные интерфейсы имеются в данном системном блоке?</li>
-						<li class="practice-page__item">Какие интерфейсы вы ещё знаете?</li>
-						<li class="practice-page__item">Какие интерфейсы находятся на задней стенки материнской платы?</li>
-						<li class="practice-page__item">Что такое интерфейс?</li>
-						<li class="practice-page__item">Какие слоты для подключения видеокарт вы знаете?</li>
-						<li class="practice-page__item">Сколько типов оперативной памяти существует?</li>
-						<li class="practice-page__item">Для чего нужен сокет?</li>
-						<li class="practice-page__item">Отличие сокета Intel от AMD?</li>
-						<li class="practice-page__item">Для  чего использовался разъем PCI?</li>
-						<li class="practice-page__item">Из чего изготавливаются современные материнские платы?</li>
-						<li class="practice-page__item">Какие интерфейсы находятся на задней крышки материнской платы?</li>
-						<li class="practice-page__item">Какие форм-факторы бывают у материнской платы?</li>
-						<li class="practice-page__item">С чем взаимодействует серверный мост?</li>
-						<li class="practice-page__item">С чем взаимодействует южный мост?</li>
-						<li class="practice-page__item">Перечислите компоненты материнской платы.</li>
+						<li class="practice-page__item">Каковы основные параметры настроек BIOS?</li>
+						<li class="practice-page__item">Как расшифровать аббревиатуру  BIOS?</li>
+						<li class="practice-page__item">Для  чего предназначен BIOS?</li>
+						<li class="practice-page__item">Как замедлить работу ПК при помощи настроек BIOSa?</li>
+						<li class="practice-page__item">Как ускорить работу ПК при помощи настроек BIOSa?</li>
+						<li class="practice-page__item">Перечислите этапы перепрошивки BIOSa из видео.</li>
+						<li class="practice-page__item">Как сбросить BIOS?</li>
+						<li class="practice-page__item">Как зайти в BIOS?</li>
 					</ol>
 				</div>		
 			</div>
