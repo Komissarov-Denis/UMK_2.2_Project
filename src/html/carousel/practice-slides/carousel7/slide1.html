@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../../../css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="../../../../css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="../../../../css/style.min.css">
+		
+		<title>КОНФИГУРИРОВАНИЕ</title>
+		<link rel="icon" href="../../../../../src/icons/favicon.ico" type="image/x-icon">
+
+	</head>
+<body>
+	
+	<div class="practice-page">
+		<div class="practice-page__wrapper">
+
+			<h1>Практическое занятие № 7.</h1>
+			<div class="practice-page__text">
+				<p><span>Тема:</span> Изучить особенности подключения и конфигурирования накопителей HDD и приводов дисков, SSD и flash. Изучение создания RAID – массива.</p>
+				<p><span>Цель занятия: </span> Ознакомится с подключением накопителей. Изучить создание RAID – массива.</p>
+				<p><span>Оборудование:</span> ПК, методические указания.</p>
+			</div>
+			<div class="practice-page__lists practice-page__lists_mod">
+				<div class="practice-page__list-descr"><span>Литература:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Периферийные устройства вычислительной техники: Учебное пособие / Т.Л. Партыка, И.И. Попов. - 3-e изд., испр. и доп. - М.: Форум, 2014. - 432 с.: ил.; 60x90 1/16. - (Профессиональное образование);</li>
+						<li class="practice-page__item">http://pc-information-guide.ru/zhestkij-disk/interfejsy-podklyucheniya-zhestkix-diskov-ide-sata-i-drugie.html (дата обращения 03.06.2024);</li>
+						<li class="practice-page__item">https://windowstips.ru/raid-massiv-sozdanie(дата обращения 03.06.2024);</li>
+						<li class="practice-page__item">https://pc-consultant.ru/zhelezo/kak-podklyuchit-zhestkij-disk-k-komp-yuteru-sata/ (дата обращения 03.06.2024).</li>
+					</ol>
+				</div>	
+				<div class="practice-page__list-descr"><span>Ход занятия:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Инструктаж преподавателя по ходу работы;</li>
+						<li class="practice-page__item">Самостоятельная работа студентов;</li>
+						<li class="practice-page__item">Контроль практических и теоретических навыков, подведение итогов работы студентов.</li>
+					</ol>
+				</div>	
+				<div class="practice-page__list-descr"><span>Порядок выполнения работы:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Ознакомиться с теоретической частью;</li>
+						<li class="practice-page__item">Просмотр видеоматериала;</li>
+						<li class="practice-page__item">Выслушать инструктаж преподавателя;</li>
+						<li class="practice-page__item">Контроль практических и теоретических навыков, подведение итогов работы студентов.</li>
+					</ol>
+				</div>
+			</div>	
+			<br>
+			<br>
+			<br>
+			<h2>Виды взаимодействия жестких дисков и материнской платы компьютера (виды интерфейсов)</h2>
+			<div class="practice-page__text">
+				<p>Итак, первым на очереди у нас будет самый "древний" (80-е года) из всех, в современных HDD его уже не встретить, это интерфейс IDE (он же ATA, PATA).</p>
+			</div>
+			<div class="practice-page__text">
+				<p><span>IDE</span> - в переводе с английского "Integrated Drive Electronics", что буквально означает - "встроенный контроллер". Это уже потом IDE стали называть интерфейсом для передачи данных, поскольку контроллер (находящийся в устройстве, обычно в жестких дисках и оптических приводах) и материнскую плату нужно было чем-то соединять. Его (IDE) еще называют ATA (Advanced Technology Attachment), получается что-то вроде "Усовершенствованная технология подсоединения". Дело в том, что <span>ATA - параллельный интерфейс передачи данных</span>, за что вскоре (буквально сразу после выхода SATA, о котором речь пойдет чуть ниже) он был переименован в PATA (Parallel ATA).</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Что тут сказать, IDE хоть и был очень медленный (пропускная способность канала передачи данных составляла от 100 до 133 мегабайта в секунду в разных версиях IDE - и то чисто теоретически, на практике гораздо меньше), однако позволял присоединять одновременно сразу два устройства к материнской плате, используя при этом один шлейф.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img7/image001.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<span>Причем в случае подключения сразу двух устройств, пропускная способность линии делилась пополам. Однако, это далеко не единственный недостаток IDE. Сам провод, как видно из рисунка, достаточно широкий и при подключении займет львиную долю свободного пространства в системном блоке, что негативно скажется на охлаждении всей системы в целом. В общем <span>IDE уже устарел морально</span> и физически, по этой причине разъем IDE уже не встретить на многих современных материнских платах, хотя до недавнего времени их еще ставили (в количестве 1 шт.) на бюджетные платы и на некоторые платы среднего ценового сегмента.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Следующим, не менее популярным, чем IDE в свое время, интерфейсом является <span>SATA (Serial ATA)</span>, характерной особенностью которого является последовательная передача данных. Является самым массовым для применения в ПК.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img7/image002.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p>Существуют 3 основных варианта (ревизии) SATA, отличающиеся друг от друга пропускной способностью: rev. 1 (SATA I) - 150 Мб/с, rev. 2 (SATA II) - 300 Мб/с, rev. 3 (SATA III) - 600 Мб/с. Но это только в теории. На практике же, скорость записи/чтения жестких дисков обычно не превышает 100-150 Мб/с, а оставшаяся скорость пока не востребована и влияет разве что на скорость взаимодействия контроллера и кэш-памяти HDD (повышает скорость доступа к диску).</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Из нововведений можно отметить - обратную совместимость всех версий SATA (диск с разъемом SATA rev. 2 можно подключить к мат. плате с разъемом SATA rev. 3 и т.п.), улучшенный внешний вид и удобство подключения/отключения кабеля, увеличенная по сравнению с IDE длина кабеля (1 метр максимально, против 46 см на IDE интерфейсе), поддержка <span>функции NCQ</span> начиная уже с первой ревизии. Спешу обрадовать обладателей старых устройств, не поддерживающих SATA - существуют <span>переходники с PATA на SATA</span>, это реальный выход из ситуации, позволяющий избежать траты денег на покупку новой материнской платы или нового жесткого диска.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod" alt="img" src="../../../../img/practice/config/img7/image003.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p>Так же, в отличии от PATA, интерфейсом SATA предусмотрена "горячая замена" жестких дисков, это значит, что при включенном питании системного блока компьютера, можно присоединять/отсоединять жесткие диски. Правда для ее реализации необходимо будет немного покопаться в настройках BIOS и включить режим AHCI.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Следующий на очереди - <span>eSATA (External SATA)</span> - был создан в 2004 году, слово "external" говорит о том, что он используется для подключения внешних жестких дисков. Поддерживает <span>"горячую замену"</span> дисков. Длина интерфейсного кабеля увеличена по сравнению с SATA - максимальная длина составляет теперь аж два метра. eSATA физически не совместим с SATA, но обладает той же пропускной способностью.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod4" alt="img" src="../../../../img/practice/config/img7/image004.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p>Но eSATA - далеко не единственный способ подключить внешние устройства к компьютеру.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Например <span>FireWire</span> - последовательный высокоскоростной интерфейс для подключения внешних устройств, в том числе HDD.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img7/image005.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p>Поддерживает "горячу замену" винчестеров. По пропускной способности сравним с USB 2.0, а с появлением USB 3.0 - даже проигрывает в скорости. Однако у него все же есть преимущество - FireWire способен обеспечить изохронную передачу данных, что способствует его применению в цифровом видео, так как он позволяет передавать данные в режиме реального времени. Несомненно, FireWire популярен, но не настолько, как например USB или eSATA. Для подключения жестких дисков он используется довольно редко, в большинстве случаев с помощью FireWire подключают различные мультимедийные устройства.</p>
+			</div>
+			<div class="practice-page__text">
+				<p><span>USB (Universal Serial Bus)</span>, пожалуй самый распространенный интерфейс, используемый для подключения внешних жестких дисков, флешек и твердотельных накопителей (SSD). Как и в предыдущем случае - есть поддержка "горячей замены", довольно большая максимальная длина соединительного кабеля - до 5 метров в случае использования USB 2.0, и до 3 метров - если используется USB 3.0. Наверное можно сделать и бОльшую длину кабеля, но в этом случае стабильная работа устройств будет под вопросом.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Скорость передачи данных USB 2.0 составляет порядка 40 Мб/с, что в общем-то является низким показателем. Да, конечно, для обыкновенной повседневной работы с файлами пропускной способности канала в 40 Мб/с хватит, но как только речь пойдет о работе с большими файлами, поневоле начнешь смотреть в сторону чего-то более скоростного. Но оказывается выход есть, и имя ему - USB 3.0, пропускная способность которого, по сравнению с предшественником, возросла в 10 раз и составляет порядка 380 Мб/с, то есть практически как у SATA II, даже чуть больше.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Есть две разновидности контактов кабеля USB, это тип "A" и тип "B", расположенные на противоположных концах кабеля. Тип "A" - контроллер (материнская плата), тип "B" - подключаемое устройство.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod9" alt="img" src="../../../../img/practice/config/img7/image006.jpg"></img>
+						<p><span>USB 3.0 (тип "A") совместим с USB 2.0 (тип "A"). Типы "B" не совместимы между собой, как видно из рисунка.</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>SCSI (Small Computer System Interface)</span> - параллельный интерфейс для подключения различных внешних устройств (не только жестких дисков).</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Был разработан и стандартизирован даже несколько раньше, чем первая версия SATA. В свежих версия SCSI есть поддержка "горячей замены".</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img7/image007.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>SAS (Serial Attached SCSI)</span> пришедший на смену SCSI, должен был решить ряд недостатков последнего. И надо сказать - ему это удалось. Дело в том, что из-за своей "параллельности" SCSI использовал общую шину, поэтому с контроллером одновременно могло работать только лишь одно из устройств, SAS - лишен этого недостатка.</p>
+			</div>
+			<div class="practice-page__text">
+				<p>Кроме того, он обратно совместим с SATA, что несомненно является большим плюсом. К сожалению, стоимость винчестеров с интерфейсом SAS близка к стоимости SCSI-винчестеров, но от этого никак не избавиться, за скорость приходится платить.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6" alt="img" src="../../../../img/practice/config/img7/image008.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p>Подключения HDD - <span>NAS (Network Attached Storage)</span>. В настоящее время сетевые системы хранения данных (NAS) имеют большую популярность. По сути, это отдельный компьютер, этакий мини-сервер, отвечающий за хранение данных. Он подключается к другому компьютеру через сетевой кабель и управляется с другого компьютера через обычный браузер. Это все нужно в тех случаях, когда требуется большое дисковое пространство, которым пользуются сразу несколько людей (в семье, на работе). Данные от сетевого хранилища передаются к компьютерам пользователей либо по обычному кабелю (Ethernet), либо при помощи Wi-Fi.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod5" alt="img" src="../../../../img/practice/config/img7/image009.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2>Подключение жесткого диска внутрь корпуса к разъемам SATA</h2>
+			<div class="practice-page__text">
+				<p><span>Шаг 1.</span> Снимите крышку корпуса Вашего системного блока.</p>
+			</div>
+			<div class="practice-page__text">
+				<p><span>Шаг 2.</span> Присоедините информационный шлейф к разъему на материнской плате.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod11 alt="img" title="img" src="../../../../img/practice/config/img7/image010.jpg"></img>
+						<p><span>Присоединяем информационный шлейф к разъему на материнской плате.</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>Шаг 3.</span> Присоедините информационный шлейф к разъему на жестком диске.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod11 alt="img" title="img" src="../../../../img/practice/config/img7/image011.jpg"></img>
+						<p><span>Присоединяем информационный шлейф к разъему на жестком диске.</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>Шаг 4.</span> Подключите шлейф питания к разъему винчестера.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod11 alt="img" title="img" src="../../../../img/practice/config/img7/image012.jpg"></img>
+						<p><span>Подключаем шлейф питания к разъему винчестера.</span></p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2>Виды RAID массивов</h2>
+			<div class="practice-page__text">
+				<p>На данный момент существуют следующие типы RAID массивов:</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod15 alt="img" title="img" src="../../../../img/practice/config/img7/image013.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 0 или «Чередование»</span> – массив из двух или более дисков для повышения общей производительности. Объем рейда будет общий (HDD 1 + HDD 2 = Общий объем), скорость считывания\записи будет выше (за счет разбиения записи на 2 устройства), но страдает надежность сохранности информации. Если одно из устройств выйдет из строя, то вся информация массива будет потеряна.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod15 alt="img" title="img" src="../../../../img/practice/config/img7/image014.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 1 или «Зеркало»</span> –несколько дисков копирующих друг друга для повышения надежности. Скорость записи остаётся на прежнем уровне, скорость считывания увеличивается, многократно повышается надежность (даже если одно устройство выйдет из строя, второе будет работать), но стоимость 1 Гигабайта информации увеличивается в 2 раза (если делать массив из двух hdd).</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod2 alt="img" title="img" src="../../../../img/practice/config/img7/image015.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 2</span> – массив, построенный на работе дисков для хранения информации и дисков коррекции ошибок. Расчет количества HDD для хранения информации выполняется по формуле «2^n-n-1», где n - количество HDD коррекции. Данный тип используется при большом количестве HDD, минимальное приемлемое число – 7, где 4 для хранения информации, а 3 для хранения ошибок. Плюсом этого вида будет повышенная производительность, по сравнению с одним диском.</p>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 3</span> – состоит из «n-1» дисков, где n – диск хранения блоков четности, остальные устройства для хранения информации. Информацию делится на куски меньше объема сектора (разбиваются на байты), хорошо подходит для работы с большими файлами, скорость чтения файлов малого объема очень мала. Характерен высокой производительностью, но малой надежностью и узкой специализацией.</p>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 4</span> – похож на 3й тип, но разделение происходит на блоки, а не байты. Этим решением получилось исправить малую скорость чтения файлов малого объема, но скорость записи осталось низкой.</p>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod6 alt="img" title="img" src="../../../../img/practice/config/img7/image016.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__text">
+				<p><span>RAID 5 и 6</span> – вместо отдельного диска для корреляции ошибок, как в прошлых вариантах, используются блоки, равномерно распределённые по всем устройствам. В этом случае повышается скорость чтения\записи информации за счет распараллеливания записи. Минусом данного типа является долговременное восстановление информации в случае выхода из строя одного из дисков. Во время восстановления идёт очень высокая нагрузка на другие устройства, что понижает надежность и повышает выход другого устройства из строя и потерю всех данных массива. Тип 6 повышает общую надежность, но понижает производительность.</p>
+			</div>
+			<h3>Комбинированные виды RAID массивов:</h3>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod alt="img" title="img" src="../../../../img/practice/config/img7/image017.jpg"></img>
+						<p><span>RAID 01 (0+1)</span> - Два Рейд 0 объединяются в Рейд 1.</p>
+					</div>
+				</div>
+			</div>
+			<div class="practice-page__wrpr practice-page__wrpr_mod">
+				<div class="practice-page__img-block practice-page__img-block_mod4">
+					<div>
+						<img class="practice-page__img practice-page__img_mod alt="img" title="img" src="../../../../img/practice/config/img7/image018.jpg"></img>
+						<p><span></span></p>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="practice-page__text">
+				<p></p>
+			</div>
+			<div class="practice-page__lists practice-page__lists_mod">
+				<div class="practice-page__list-descr"><span>Комплектующие необходимо:</span>
+					<ul class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">выкладывать подальше от батареи;</li>
+						<li class="practice-page__item">хранить в коробке до начала сборки.</li>
+					</ul>
+				</div>	
+			</div>
+			<br>
+			<br>
+			<div class="practice-page__text">
+				<p><span>Задание:</span> Запишите в отчет  устройства и интерфейсы, которые находятся в системном блоке и на задней стенке в виде таблицы, проверить знание интерфейсов на тренажере.</p>
+			</div>
+			<div class="practice-page__lists practice-page__lists_mod">
+				<div class="practice-page__list-descr"><span>Контрольные вопросы:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">В какой последовательности проводится сборка системного блока?</li>
+						<li class="practice-page__item">Как бы вы изменили последовательность сборки (аргументировать свой ответ)?</li>
+					</ol>
+				</div>		
+			</div>
+			<div class="practice-page__text">
+				<p><span>Сделайте вывод о проделанной работе.</span></p>
+			</div>
+			
+
+		</div>
+	</div>	
+	
+	<!-- <script src="js/script.js"></script> -->
+</body>
+</html>
