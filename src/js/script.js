@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	}	
 	modal();
 
-	// modal----------------------------------------------------
+	// modal-manual---------------------------------------------------
 	const btnModalManual = document.querySelector('.btn_open-modal-manual');
 	btnModalManual.addEventListener('click', function() {
 		openModalWindowManual();
