@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../../../css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="../../../../css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="../../../../css/style.min.css">
+		
+		<title>УСТРАНЕНИЕ НЕИСПРАВНОСТИ</title>
+		<link rel="icon" href="../../../../../src/icons/favicon.ico" type="image/x-icon">
+
+	</head>
+<body>
+	
+	<div class="practice-page">
+		<div class="practice-page__wrapper">
+
+			<h1>Практическое занятие № 15.</h1>
+			<div class="practice-page__text">
+				<p><span>Тема:</span> Неисправности и методы их устранения в блоках питания и материнских платах.</p>
+				<p><span>Цель занятия: </span> Ознакомиться с неисправностями и методами их устранения в блоках питания и материнских платах.</p>
+				<p><span>Оборудование:</span> ПК, методические указания.</p>
+			</div>
+			<div class="practice-page__lists practice-page__lists_mod">
+				<div class="practice-page__list-descr"><span>Литература:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Периферийные устройства вычислительной техники: Учебное пособие / Т.Л. Партыка, И.И. Попов. - 3-e изд., испр. и доп. - М.: Форум, 2014. - 432 с.: ил.; 60x90 1/16. - (Профессиональное образование);</li>
+						<li class="practice-page__item">http://service.libra.zp.ua/ru/news/tipovye-neispravnosti-blokov-pitaniya-pk  (дата обращения 05.06.2024);</li>
+						<li class="practice-page__item">https://www.sites.google.com/site/komputernyjservic/ustranenie-nepoladok-materinskih-plat  (дата обращения 05.06.2024);</li>
+						<li class="practice-page__item">https://www.youtube.com/watch?v=BRu9EHX0wFY (дата обращения 05.06.2024).</li>
+					</ol>
+				</div>	
+				<div class="practice-page__list-descr"><span>Ход занятия:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Инструктаж преподавателя по ходу работы;</li>
+						<li class="practice-page__item">Самостоятельная работа студентов;</li>
+						<li class="practice-page__item">Контроль практических и теоретических навыков, подведение итогов работы студентов.</li>
+					</ol>
+				</div>	
+				<div class="practice-page__list-descr"><span>Порядок выполнения работы:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Ознакомиться с теоретической частью;</li>
+						<li class="practice-page__item">Просмотр видеоматериала;</li>
+						<li class="practice-page__item">Выслушать инструктаж преподавателя;</li>
+						<li class="practice-page__item">Контроль практических и теоретических навыков, подведение итогов работы студентов.</li>
+					</ol>
+				</div>
+			</div>	
+			<br>
+			<br>
+			<br>
+			<h2>Типовые неисправности блоков питания ПК</h2>			
+			<div class="practice-page__text">
+				<p>Какова вероятность отказа блока питания ПК при частом включении и выключении ПК?</p>
+				<p>Блоки питания ПК чаще всего выходят из стоя при включении ПК из-за резонансных явлений, вызывающих перегрузку выходных и входных цепей блока питания.</p>
+				<p>Поэтому частое включение и выключение ПК неблагоприятно сказывается на его надежности в работе.</p>
+				<p>На надежность работы компьютера влияют также помехи в цепях электропитания.</p>
+				<p>Для нормальной работы ПК необходимо, чтобы напряжение сети питания было достаточно стабильным, а уровень помех в сети не должен превышать определенной величины.</p>
+			</div>
+			<div class="practice-page__list-descr">При выборе места и способа подключения ПК к электросети необходимо учитывать следующие требования:
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">По возможности включайте ПК к отдельным линиям электропитания со своими защитными автоматами;</li>
+					<li class="practice-page__item">Проверьте сопротивление шины заземления (оно должно быть доли Ома);</li>
+					<li class="practice-page__item">Убедитесь в отсутствии помех, бросков и провалов напряжения питания;</li>
+					<li class="practice-page__item">Уровень помех в электросети возрастает при увеличении внутреннего сопротивления линии электропитания;</li>
+					<li class="practice-page__item">Не пользуйтесь без крайней необходимости удлинителями;</li>
+					<li class="practice-page__item">Не подключайте к одной розетке ПК и другую бытовую технику (холодильник, телевизор, СВЧ-печь, пылесос, кондиционер и т. д.).</li>
+				</ol>
+			</div>
+			<div class="practice-page__text">
+				<p>Блок питания (БП) обычно рассчитан на работу в сети переменного тока 115-127 В и 220-240 В и имеет мощность 150-400 Вт.</p>
+				<p>Он размещается внутри системного блока справа от системной платы в большом металлическом корпусе и подключается к ней с помощью многожильного кабеля.</p>
+				<p>Для подачи питания +5 и +12 В на НЖМД и НГМД в нем предусмотрен набор четырехжильных кабелей.</p>
+				<p>Следует помнить, что распайка разъема БП, подключаемого к системной плате, не во всех ПК одинакова. На задней панели БП имеется переключатель напряжения электропитания.</p>				
+			</div>
+			<h3>Пользователи ПК!</h3>
+			<div class="practice-page__text">
+				<p>Перед тем как включать компьютер первый раз, не забудьте проверить положение этого переключателя!</p>
+				<p>Кабель сетевого питания ПК подсоединяется к разъему на задней стенке БП, на которой, как правило, также имеется гнездо для подключения кабеля питания дисплея.</p>
+			</div>
+			<div class="practice-page__list-descr">Все неисправности БП в зависимости от причины их возникновения можно подразделить на два класса:
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">вызванные внешними помехами в сети электропитания и нагрузками, параллельными ПК;</li>
+					<li class="practice-page__item">вызванные внутренними нагрузками, замыканиями или естественным износом БП.</li>
+				</ol>
+			</div>
+			<h3>Типовые неисправности блоков питания ПК:</h3>			
+			<table class="practice-page__table">
+				<colgroup class="practice-page__colgroup">
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<tr>
+					<th>Тип неисправности</th>
+					<th>Возможная причина</th>
+					<th>Способ устранения</th>
+				</tr>	
+				<tr>
+					<td>Не светится индикатор питания компьютера, не вращается вентилятор</td>
+					<td>Перегорел предохранитель</td>
+					<td>Заменить предохранитель</td>
+				</tr>
+				<tr>
+					<td>После замены предохранитель при включении питания вновь перегорает</td>
+					<td>Вышли из строя элементы входных цепей БП</td>
+					<td>Проверить входные цепи БП</td>
+				</tr>
+				<tr>
+					<td>Предохранитель цел, но блок питания не работает</td>
+					<td>Неисправны МКТ или схема управления</td>
+					<td>Проверить исправность МЕСТ и схемы управления</td>
+				</tr>
+				<tr>
+					<td>Отсутствуют выходные напряжения, вентилятор не работает</td>
+					<td>Пробита микросхема ШИМ-генератора типа TL497, TDA4601 (отечественный аналог 1033ЕУ1) или ТОА4605</td>
+					<td>Заменить микросхему</td>
+				</tr>
+				<tr>
+					<td>Отсутствуют выходные напряжения, вентилятор не работает</td>
+					<td>Пробит конденсатор в схеме управления М1СГ, неисправен датчик обратной связи</td>
+					<td>Заменить конденсатор, проверить датчики обратной связи</td>
+				</tr>
+				<tr>
+					<td>Не запускается преобразователь частоты</td>
+					<td>Пробит импульсный трансформатор или образовались короткозамкнутые витки</td>
+					<td>Заменить или отремонтировать трансформатор</td>
+				</tr>
+				<tr>
+					<td>Не включается ПК, хотя напряжение на БП есть</td>
+					<td>Отсутствует сигнал «Power good»</td>
+					<td>Проверить микросхему, вырабатывающую сигнал «Power good»</td>
+				</tr>
+				<tr>
+					<td>БП работает одну-две секунды и отключается</td>
+					<td>Срабатывает защита от перегрузки</td>
+					<td>Проверить цепь нагрузки</td>
+				</tr>
+				<tr>
+					<td>Не одного из выходных напряжений</td>
+					<td>Неисправность вторичных цепей одной из обмоток трансформатора</td>
+					<td>Отремонтировать вторичные цепи</td>
+				</tr>
+				<tr>
+					<td>Выходные напряжения ±5 и ±12 В есть, но имеют высокий уровень пульсаций</td>
+					<td>Неисправность в фильтрующих и стабилизирующих цепях</td>
+					<td>Отремонтировать фильтры и стабилизаторы</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<br>
+			<h2>Неисправности материнских плат и способы их устранения</h2>
+			<div class="practice-page__text">
+				<p>Проблемы, связанные с материнскими платами часто бывают вызваны неплотными или неправильными кабельными подключениями, отказом компонентов, неверными драйверами и поврежденными обновлениями.</p>
+			</div>
+			<h3>Распространённые неполадки материнских плат и способы их устранения:</h3>			
+			<table class="practice-page__table">
+				<colgroup class="practice-page__colgroup">
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<tr>
+					<th>Определение	проблемы</th>
+					<th>Возможные причины</th>
+					<th>Возможные решения</th>
+				</tr>	
+				<tr>
+					<td>Часы на компьютере показывают неправильное время, или параметры BIOS меняются при перезагрузке</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Возможно, батарея CMOS закреплена не надёжно;</li>
+								<li class="practice-page__item">Возможно, батарея CMOS разряжена.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Закрепите батарею;</li>
+								<li class="practice-page__item">Замените батарею.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Извлечение данных с флэш-накопителя USB, или сохранение их на нём выполняются медленно</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Материнская плата не поддерживает USB 3.0.;</li>
+								<li class="practice-page__item">Флэш-накопитель USB не поддерживает USB 3.0.;</li>
+								<li class="practice-page__item">Скорость порта установлена на полную (full) в настройках BIOS.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Обновите флэш-накопитель или материнскую плату, чтобы они поддерживали USB 3.0.;</li>
+								<li class="practice-page__item">Измените скорость порта на высокую (high) в настройках BIOS.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Компьютер не запускается после обновления прошивки BIOS</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Обновление прошивки  BIOS установлено неправильно.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Обратитесь к производителю материнской платы для получения новой микросхемы BIOS. (Если на материнской плате есть две микросхемы BIOS, то можно использовать вторую).</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Компьютер отображает неверную информацию о ЦП при загрузке</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Перемычки на материнской плате расположены неверно;</li>
+								<li class="practice-page__item">Параметры ЦП в расширенных настройках BIOS неверны;</li>
+								<li class="practice-page__item">BIOS не распознаёт ЦП должным образом.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Установите нужное положение перемычек на материнской плате;</li>
+								<li class="practice-page__item">Правильно установите расширенные параметры BIOS для ЦП;</li>
+								<li class="practice-page__item">Обновите BIOS.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Светодиодный индикатор жесткого диска на передней панели не загорается</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Привод индикатора жесткого диска не подключён, или подключен не надёжно;</li>
+								<li class="practice-page__item">Привод индикатора жесткого диска не правильно подключён в разъём материнской платы для передней панели корпуса.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Повторно подключите привод индикатора к материнской плате;</li>
+								<li class="practice-page__item">Правильно подключите кабельный разъём индикатора жесткого диска в разъёме материнской платы для передней панели корпуса.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Встроенная сетевая плата на материнской плате перестала работать</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Сбой оборудования сетевой платы.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Добавьте новую сетевую плату в свободное гнездо расширения.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Компьютере не показывает видео после установки нового видеоадаптера PCIe</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Параметры BIOS установлены на использование встроенного видеоадаптера;</li>
+								<li class="practice-page__item">Кабель по прежнему подключён ко встроенному видеоадаптеру;</li>
+								<li class="practice-page__item">Новый видеоадаптер неисправен.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Отключите встроенный видеоадаптер в параметрах BIOS;</li>
+								<li class="practice-page__item">Подключите кабель к новому видеоадаптеру;</li>
+								<li class="practice-page__item">Вставьте проверенный, работающий видеоадаптер.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Новая звуковая плата не работает</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Динамики не подключены к нужному разъёму;</li>
+								<li class="practice-page__item">Звук отключён;</li>
+								<li class="practice-page__item">Звуковая карта неисправна;</li>
+								<li class="practice-page__item">Параметры BIOS установлены на использование встроенного звукового устройства.</li>
+							</ol>
+						</div>
+					</td>
+					<td>
+						<div class="practice-page__list-descr practice-page__list-descr_mod1">
+							<ol class="practice-page__list practice-page__list_mod">
+								<li class="practice-page__item">Подключите динамики к правильному разъёму;</li>
+								<li class="practice-page__item">Включите звук;</li>
+								<li class="practice-page__item">Установите проверенную, работающую звуковую плату;</li>
+								<li class="practice-page__item">Отключите встроенное звуковое устройство в параметрах BIOS.</li>
+							</ol>
+						</div>
+					</td>
+				</tr>
+			</table>		
+			<br>
+			<br>
+			<br>
+			<div class="practice-page__text">
+				<p><span>Задание:</span> Запишите в отчет неисправности и методы их устранения в блоках питания и материнских платах.</p>
+			</div>
+			<div class="practice-page__lists practice-page__lists_mod">
+				<div class="practice-page__list-descr"><span>Контрольные вопросы:</span>
+					<ol class="practice-page__list practice-page__list_mod">
+						<li class="practice-page__item">Не светится индикатор питания компьютера, не вращается вентилятор в чем причина неисправности?</li>
+						<li class="practice-page__item">Компьютер не запускается после обновления прошивки BIOS, причина неисправности и метод устранения?</li>
+						<li class="practice-page__item">Что делать если новая звуковая плата не работает?</li>
+					</ol>
+				</div>		
+			</div>
+			<div class="practice-page__text">
+				<p><span>Сделайте вывод о проделанной работе.</span></p>
+			</div>
+			
+
+		</div>
+	</div>	
+	
+	<!-- <script src="js/script.js"></script> -->
+</body>
+</html>
