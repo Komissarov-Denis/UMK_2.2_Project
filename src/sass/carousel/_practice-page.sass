@@ -151,35 +151,21 @@
 		justify-content: space-around
 		flex-wrap: wrap
 	&__table
-		border-color: $black_color !important
-		border: 2px
-		font-family: 'Times New Roman', serif !important
-		colgroup
-			border-color: $black_color !important
-			border: 2px
-			font-family: 'Times New Roman', serif !important
-		col			
-			border-color: $black_color !important
-			border: 2px
-			font-family: 'Times New Roman', serif !important
-		tbody			
-			border-color: $black_color !important
-			border: 2px
-			font-family: 'Times New Roman', serif !important
-
+		margin: 0 auto
+		max-width: 1200px
+		border-collapse: collapse
 		tr
-			
-			border-color: $black_color !important
-			border: 2px
-			font-family: 'Times New Roman', serif !important
-		th
-			
-			border-color: $black_color !important
-			border: 2px
-			font-family: 'Times New Roman', serif !important			
-
-
-
+			th
+				padding: 10px 10px
+				border: 2px solid $black_color
+				font-family: 'Times New Roman', serif !important
+				font-size: 20px
+				text-align: center
+			td
+				padding: 10px 10px	
+				border: 1px solid $black_color
+				font-family: 'Times New Roman', serif !important
+				font-size: 20px
 
 @media (max-width: 1919.98px)
 	.practice-page
@@ -205,4 +191,10 @@
 		&__item
 			font-size: $font-size_20-14	
 		&__item-list		
-			font-size: $font-size_20-14
+			font-size: $font-size_20-14	
+		&__table
+			tr
+				th		
+					font-size: $font-size_20-14	
+				td		
+					font-size: $font-size_20-14		
