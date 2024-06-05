@@ -151,36 +151,88 @@
 					<li class="practice-page__item">Попробуйте использовать низкоуровневое форматирование. Затем создайте разделы на жестком диске, отформатируйте его и скопируйте на него системные файлы.</li>
 				</ol>
 			</div>
-			<br>
-			<br>
-			<br>			
+			<div class="practice-page__list-descr"><span>Диск работает как основной, но как вспомогательный – нет (или наоборот). Проверьте следующее:</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Убедитесь, что шлейф и кабель питания правильно подключены к диску;</li>
+					<li class="practice-page__item">Войдите в программу BIOS Setup и убедитесь в том, что для данного диска выбраны правильные настройки, и что контроллеры жесткого диска и флоппи-дисковода включены. (рекомендуется использовать опцию Auto Detect);</li>
+					<li class="practice-page__item">Проверьте загрузочную последовательность в программе BIOS setup;</li>
+					<li class="practice-page__item">Убедитесь, что необходимый основной раздел активен;</li>
+					<li class="practice-page__item">Если это диск IDE, проверьте установки перемычек всех устройств IDE, особенно перемычек (Master/Slave);</li>
+					<li class="practice-page__item">Последовательно замените плату контроллера, кабель и жесткий диск.</li>
+				</ol>
+			</div>
+			<div class="practice-page__list-descr"><span>Если создается впечатление, что жесткий диск работает слишком медленно, проверьте следующее:</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Проверьте систему на наличие вирусов. Произведите дефрагментацию жесткого диска;</li>
+					<li class="practice-page__item">Убедитесь, что к шлейфу не подключено медленное устройство;</li>
+					<li class="practice-page__item">При использовании жестких дисков IDE войдите в программу BIOS Setup и посмотрите, какой режим включен - Ultra DMA или PIO;</li>
+					<li class="practice-page__item">Режим Ultra DMA обеспечивает большую производительность при поддержке данной возможности жестким диском;</li>
+					<li class="practice-page__item">Диски SCSI:
+						<ul class="practice-page__item-list">
+							<li> Проверьте установки перемычек всех устройств SCSI;</li>
+							<li>Убедитесь, что основной жесткий диск имеет идентификатор SCSI ID 0.</li>
+						</ul>
+					</li>
+					<li class="practice-page__item">Войдите в программу SCSI BIOS и проверьте настройки. Проверьте, производилось ли низкоуровневое форматирование жесткого диска;</li>
+					<li class="practice-page__item">Если для этого не использовалась подходящая программа для низкоуровневого форматирования, критически важная информация о дорожках диска могла быть стерта.</li>
+				</ol>
+			</div>
+			<div class="practice-page__list-descr"><span>Если при работе диска часто возникают сбои, проверьте следующее:</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Убедитесь, что все вентиляторы работают нормально. Система может перегреваться;</li>
+					<li class="practice-page__item">Убедитесь в том, что для крепления накопителей использованы подходящие винты;</li>
+					<li class="practice-page__item">Проверьте наличие низкоуровневой вибрации. Проверьте отклонения напряжения;</li>
+					<li class="practice-page__item">Убедитесь, что у Вас надежный сетевой фильтр;</li>
+					<li class="practice-page__item">С помощью вольтметра проверьте напряжения на выходе источника питания. Если напряжение на каком-либо выходе слишком низкое (особенно там, где оно должно быть +5 В), замените блок питания;</li>
+					<li class="practice-page__item">Проверьте наличие других внешних факторов, таких как дым, густая пыль, повышенная влажность или еще что-либо способное вызвать сильное электромагнитное поле, например, машинное оборудование или моторы.</li>
+				</ol>
+			</div>
+			<h3>Дисковод Serial ATA не распознается</h3>
+			<div class="practice-page__text">
+				<p>Существует несколько причин, по которым операционная система может не обнаружить дисковод Serial ATA в процессе загрузки.</p>
+			</div>
+			<div class="practice-page__list-descr"><span>К дисководу не подведено питание</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Убедитесь, что кабель от источника питания подключен к дисководу SATA. Если Ваш источник питания не имеет разъемов питания SATA, Вам потребуется переходник.</li>
+				</ol>
+			</div>
+			<div class="practice-page__list-descr"><span>Не подключен шлейф SATA</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Убедитесь, что кабель данных SATA плотно подключен к разъему дисковода SATA и к разъему SATA на системной плате.</li>
+				</ol>
+			</div>
+			<div class="practice-page__list-descr"><span>Дисковод SATA не отформатирован.</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Подобно другим дискам, дисководы Serial ATA перед использованием необходимо отформатировать.</li>
+				</ol>
+			</div>
+			<h3>Проблемы с BIOS</h3>
+			<div class="practice-page__list-descr"><span>Иногда обнаружению дисководов SATA препятствуют разного рода проблемы, связанные с BIOS:</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Убедитесь, что на Вашей системной плате установлена последняя версия BIOS;</li>
+					<li class="practice-page__item">Попробуйте провести восстановление BIOS.</li>
+				</ol>
+			</div>
+			<div class="practice-page__list-descr"><span>Ограничение размера диска - 137 ГБ.</span>
+				<ol class="practice-page__list practice-page__list_mod">
+					<li class="practice-page__item">Оригинальные версии Windows XP или 2000* поддерживают жесткие диски размером не более 137.</li>
+				</ol>
+			</div>		
 			<br>
 			<br>
 			<br>
 			<div class="practice-page__text">
-				<p><span>Задание:</span> Запишите в отчет порядок установки видеокарты и монитора, драйверов, а также как настраивать оборудование.</p>
-			</div>
-			<div class="practice-page__lists practice-page__lists_mod">
-				<div class="practice-page__list-descr">Найдите драйвер к следующей видеокарте, порядковый номер – номер ПК, за которым вы работаете:
-					<ol class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">NVidia GeForce GTX 850m;</li>
-						<li class="practice-page__item">NVidia TITAN RTX;</li>
-						<li class="practice-page__item">NVidia GeForce RTX 2080Ti;</li>
-						<li class="practice-page__item">NVidia GeForce GTX 1080Ti;</li>
-						<li class="practice-page__item">AMD Radeon R9 390X;</li>
-						<li class="practice-page__item">AMD Radeon R5 340;</li>
-						<li class="practice-page__item">AMD Radeon R7 370;</li>
-						<li class="practice-page__item">AMDRadeonRX 590.</li>
-					</ol>
-				</div>		
+				<p><span>Задание:</span> Запишите в отчет неисправности и методы их устранения в HDD. Будьте готовы ответить на вопросы.</p>
 			</div>
 			<div class="practice-page__lists practice-page__lists_mod">
 				<div class="practice-page__list-descr"><span>Контрольные вопросы:</span>
 					<ol class="practice-page__list practice-page__list_mod">
-						<li class="practice-page__item">Перечислите интерфейсы видеокарт.</li>
-						<li class="practice-page__item">Для чего нужна видеокарта?</li>
-						<li class="practice-page__item">Для чего нужен драйвер для видеокарты?</li>
-						<li class="practice-page__item">Расскажите технику безопасности при замене комплектующих.</li>
+						<li class="practice-page__item">Какие ошибки бываю по типу?</li>
+						<li class="practice-page__item">Какие основные неисправности бывают у жестких дисков?</li>
+						<li class="practice-page__item">Какие сообщения появляются, если диск не распознается системой?</li>
+						<li class="practice-page__item">Какие моменты следует проверить, если диск не распознается системой?</li>
+						<li class="practice-page__item">Если появляется ошибка контроллера сообщения жесткого диска что надо сделать?</li>
+						<li class="practice-page__item">Что необходимо сделать, если, кажется что диск работает слишком медленно?</li>
 					</ol>
 				</div>		
 			</div>
