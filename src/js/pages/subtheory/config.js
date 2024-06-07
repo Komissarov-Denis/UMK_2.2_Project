@@ -84,12 +84,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		window.location.href = '../../carousel/theory-pages/carousel14.html';
 		// console.log('click');
 	});
-	// to-carousel15-------------------------------------------------
-	const btnConfig15 = document.querySelector('.btn_open-carousel15');
-	btnConfig15.addEventListener('click', function() {
-		window.location.href = '../../carousel/theory-pages/carousel15.html';
-		// console.log('click');
-	});
 	
 
 	// hamburger--------------------------------------------
@@ -116,7 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				item.style.borderStyle = 'none';
 				item.style.borderColor = 'none';
 				item.style.background = 'rgb(19, 54, 118)';
-				console.log(item);				
+				// console.log(item);				
 			});			
 		});
 	}
