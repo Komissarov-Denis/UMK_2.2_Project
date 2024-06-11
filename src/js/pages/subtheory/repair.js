@@ -1,5 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+	// to-carousel15------------------------------------------------
+	const btnRepair15 = document.querySelector('.btn_open-carousel15');
+	btnRepair15.addEventListener('click', function() {
+		window.location.href = '../../carousel/theory-pages/carousel15.html';
+		// console.log('click');
+	});
 	// to-carousel16------------------------------------------------
 	const btnRepair16 = document.querySelector('.btn_open-carousel16');
 	btnRepair16.addEventListener('click', function() {
@@ -40,12 +46,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	const btnRepair22 = document.querySelector('.btn_open-carousel22');
 	btnRepair22.addEventListener('click', function() {
 		window.location.href = '../../carousel/theory-pages/carousel22.html';
-		// console.log('click');
-	});
-	// to-carousel23------------------------------------------------
-	const btnRepair23 = document.querySelector('.btn_open-carousel23');
-	btnRepair23.addEventListener('click', function() {
-		window.location.href = '../../carousel/theory-pages/carousel23.html';
 		// console.log('click');
 	});
 	
