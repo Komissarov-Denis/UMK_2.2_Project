@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 	document.querySelectorAll('.btn_open-carousel').forEach((btn, i) => {
-		console.log(btn);
-		console.log(i);
+		// console.log(btn);
+		// console.log(i);
 		btn.addEventListener('click', () => {
 			window.location.href = '../../carousel/theory-pages/carousel'+[i+1]+'.html';
 			// console.log('click');
